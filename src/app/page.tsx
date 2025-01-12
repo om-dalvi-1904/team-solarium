@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Navbar } from '@/components/sections/Navbar';
 import { twMerge } from 'tailwind-merge';
 import { Anton } from 'next/font/google';
@@ -7,6 +7,14 @@ import { AnimatePresence, motion, useInView} from 'motion/react';
 import invFour from '@/assets/inv4.png';
 import Image from 'next/image';
 import { Red_Rose } from 'next/font/google';
+import { CardCar } from '@/components/ui/Cardcar';
+import invOne from '@/assets/IN1.1.png'
+import invTwo from '@/assets/inv2.png';
+import invThree from '@/assets/inv3.png';
+import invThreeTwo from '@/assets/inv3.2.png';
+import invFourLanding from '@/assets/Inv4Landing.png';
+import invFive from '@/assets/Inv5.png';
+import useSmoothScroll from '@/hooks/useSmoothScroll';
 
 const anton = Anton({
   subsets: ["latin"],
@@ -20,13 +28,18 @@ const redRose = Red_Rose({
 export default function Landing (){
   const sectionRef = useRef<HTMLElement>(null);
   const invFourRef = useRef<HTMLDivElement>(null);
+  const legacyRef = useRef<HTMLDivElement>(null);
   const isView = useInView(invFourRef, {once: true});
   const isInView = useInView(sectionRef, {once: true});
+  const isLegacyView = useInView(legacyRef, {once: true});
+
+
+  useSmoothScroll();
   return(
     <>  
     <Navbar />
     <div>
-      <video src='/test_new.mp4' className="w-screen h-screen object-cover m-0 p-0" autoPlay loop muted/>
+      <video src='/testing.mp4' className="w-screen h-screen object-cover m-0 p-0" autoPlay loop muted/>
       <div className='bg-orange-600 py-5'></div>
       <div className='flex flex-col text-white'>
         <AnimatePresence>
@@ -58,15 +71,39 @@ export default function Landing (){
           </div>
         </div>
         <div>
-          <div className='px-4 py-6'>
+          <div className='px-4 pt-6'>
             <a href='/legacy' className=''><span className={twMerge(redRose.className,'text-2xl font-extrabold border-b-4 border-orange-600 pb-1')}>Legacy</span></a>
+            <p className='font-medium text-lg py-4'>Vehicle Description</p>
           </div>
-          <div className='grid grid-rows-2 md:grid-cols-2'>
-            <p className='px-4 font-medium text-lg py-2'>Vehicle Description</p>
-            <div>
-              
-            </div>
-          </div>
+            <motion.div
+              initial={{ x: '50%' }}
+              animate={isLegacyView ? { x: 0 } : {}}
+              exit={{ x:0 }}
+              transition={{
+                duration: 10,
+                // repeat: Infinity,
+                ease: 'linear',
+            }}
+              ref={legacyRef}
+            className='hidden md:flex flex-col md:flex-row justify-start md:justify-end gap-2 px-4 overflow-hidden overflow-x-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]'>
+              <CardCar carName='Incivtus 1.0' bgImageUrl={invOne} />
+              <CardCar carName='Invictus 2.0' bgImageUrl={invTwo} />
+              <CardCar carName='Invictus 3.0' bgImageUrl={invThree} />
+              <CardCar carName='Invictus 3.2' bgImageUrl={invThreeTwo} />
+              <CardCar carName='Invictus 4.0' bgImageUrl={invFourLanding} />
+              <CardCar carName='Invictus 5.0' bgImageUrl={invFive} />
+            </motion.div>
+            <motion.div
+              ref={legacyRef}
+            className='flex md:hidden lg:hidden flex-col md:flex-row justify-start md:justify-end gap-2 px-4 overflow-hidden overflow-x-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]'>
+              <CardCar carName='Incivtus 1.0' bgImageUrl={invOne} />
+              <CardCar carName='Invictus 2.0' bgImageUrl={invTwo} />
+              <CardCar carName='Invictus 3.0' bgImageUrl={invThree} />
+              <CardCar carName='Invictus 3.2' bgImageUrl={invThreeTwo} />
+              <CardCar carName='Invictus 4.0' bgImageUrl={invFourLanding} />
+              <CardCar carName='Invictus 5.0' bgImageUrl={invFive} />
+            </motion.div>
+            {/* <div className='h-[40vh]'></div> */}
         </div>
       </div>
     </div>

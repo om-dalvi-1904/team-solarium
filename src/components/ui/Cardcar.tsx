@@ -1,69 +1,75 @@
-// "use client";
-// import Image from "next/image";
-// import React from "react";
-// import { cn } from "@/lib/utils";
+"use client";
+import { cn } from "@/lib/utils";
+import { useState, useEffect } from "react";
+import { twMerge } from "tailwind-merge";
+import { Anton } from "next/font/google";
+import { StaticImageData } from "next/image";
 
-// export const Card = React.memo(
-//   ({
-//     card,
-//     index,
-//     hovered,
-//     setHovered,
-//   }: {
-//     card: unknown;
-//     index: number;
-//     hovered: number | null;
-//     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
-//   }) => (
-//     <div
-//       onMouseEnter={() => setHovered(index)}
-//       onMouseLeave={() => setHovered(null)}
-//       className={cn(
-//         "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
-//         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
-//       )}
-//     >
-//       <Image
-//         src={card.src}
-//         alt={card.title}
-//         fill
-//         className="object-cover absolute inset-0"
-//       />
-//       <div
-//         className={cn(
-//           "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
-//           hovered === index ? "opacity-100" : "opacity-0"
-//         )}
-//       >
-//         <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
-//           {card.title}
-//         </div>
-//       </div>
-//     </div>
-//   )
-// );
+// Load Anton font
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400",
+});
 
-// Card.displayName = "Card";
+export function CardCar(props: {
+  carName: string;
+  carDescription?: string;
+  bgImageUrl: StaticImageData; // Prop to receive the imported image URL
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  const [dynamicHeight, setDynamicHeight] = useState(300); // Default height
+  const { carName, carDescription, bgImageUrl } = props;
 
-// type Card = {
-//   title: string;
-//   src: string;
-// };
+  // Effect to calculate height based on `window.innerWidth`
+  useEffect(() => {
+    const calculateHeight = () => {
+      const newHeight = Math.max(200, window.innerWidth * 0.3); // Minimum height is 200px
+      setDynamicHeight(newHeight);
+    };
 
-// // export function FocusCards({ cards }: { cards: Card[] }) {
-// //   const [hovered, setHovered] = useState<number | null>(null);
+    // Initial calculation
+    calculateHeight();
 
-// //   return (
-// //     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full">
-// //       {cards.map((card, index) => (
-// //         <Card
-// //           key={card.title}
-// //           card={card}
-// //           index={index}
-// //           hovered={hovered}
-// //           setHovered={setHovered}
-// //         />
-// //       ))}
-// //     </div>
-// //   );
-// // }
+    // Add event listener for window resize
+    window.addEventListener("resize", calculateHeight);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("resize", calculateHeight);
+    };
+  }, []);
+
+  return (
+    <div
+      className={twMerge(
+        cn(
+          "cursor-pointer overflow-hidden relative rounded-md shadow-xl flex flex-col justify-end py-8 px-2 md:px-16 border border-transparent",
+          "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black/70 hover:after:opacity-50 md:hover:px-32",
+          "transition-all duration-500"
+        )
+      )}
+      style={{
+        backgroundImage: `url(${bgImageUrl.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: `${dynamicHeight}px`,
+      }}
+      onMouseEnter={() => setIsHovered(true)} // Hover state on mouse enter
+      onMouseLeave={() => setIsHovered(false)} // Reset hover state on mouse leave
+    >
+      {isHovered && (
+        <div className={twMerge("text flex md:flex-col md:justify-start md:text-start relative z-50", anton.className)}>
+          <h1 className="font-semibold text-xl md:text-3xl text-gray-50 relative tracking-wide">
+            {carName}
+          </h1>
+          {carDescription && (
+            <p className="font-normal text-base text-gray-50 relative">
+              {carDescription}
+            </p>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
