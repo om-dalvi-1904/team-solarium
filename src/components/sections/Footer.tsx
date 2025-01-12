@@ -28,8 +28,8 @@ export const Footer = () => {
                 <hr className="border-white/30 mt-6" />
                 <div className="flex flex-col py-8">
                     <span className="flex text-xl tracking-wide font-semibold">Contact Us</span>
-                    <p className="py-4 text-lg font-light">We'd be happy to hear from you! If you have any questions, comments, or suggestions, don't hesitate to reach out.</p>
-                    <p className="py-2 text-lg font-light">We'll make sure to respond as quickly as possible!</p>
+                    <p className="py-4 text-lg font-light">We&apos;d be happy to hear from you! If you have any questions, comments, or suggestions, don&apos;t hesitate to reach out.</p>
+                    <p className="py-2 text-lg font-light">We&apos;ll make sure to respond as quickly as possible!</p>
                     <span className="py-4 text-lg font-medium">Malhar Patil: +91 95033 30842</span>
                     <span className="text-lg font-medium">Aishwarya More: +91 93255 77966</span>
                     <span className="py-4 text-lg font-medium">Email: teamsolarium@gmail.com</span>
@@ -63,8 +63,8 @@ export const Footer = () => {
                     <div className="border-l-[2px] border-white/30 rounded-xs px-6">
                         <div className="flex flex-col py-8">
                         <span className="flex text-xl tracking-wide font-semibold">Contact Us</span>
-                        <p className="py-4 text-lg font-light">We'd be happy to hear from you! If you have any questions, comments, or suggestions, don't hesitate to reach out.</p>
-                        <p className="py-2 text-lg font-light">We'll make sure to respond as quickly as possible!</p>
+                        <p className="py-4 text-lg font-light">We&apos;d be happy to hear from you! If you have any questions, comments, or suggestions, don&apos;t hesitate to reach out.</p>
+                        <p className="py-2 text-lg font-light">We&apos;ll make sure to respond as quickly as possible!</p>
                         <span className="py-4 text-lg font-medium">Malhar Patil: +91 95033 30842</span>
                         <span className="text-lg font-medium">Aishwarya More: +91 93255 77966</span>
                         <span className="py-4 text-lg font-medium">Email: teamsolarium@gmail.com</span>
