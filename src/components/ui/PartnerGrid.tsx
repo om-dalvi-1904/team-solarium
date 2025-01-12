@@ -20,6 +20,7 @@ import harnawaLogo from '@/assets/logos/harnawa.png';
 import jrLogo from '@/assets/logos/jr.png';
 import { PartnerCard } from './PartnerCard';
 import Image from 'next/image';
+import { twMerge } from 'tailwind-merge';
 
 const partnerLinks = [
     {label:'Waaree', href: waareeLogo},
@@ -48,7 +49,7 @@ export const PartnerGrid = () => {
         <div className='grid grid-cols-4 grid-rows-4 gap-4 py-4'>
             {partnerLinks.map(link => (
                 <PartnerCard key={link.label}>
-                    <Image className='size-20 md:size-32 object-contain' src={link.href} alt={`${link.label}-Icon`} />
+                    <Image className={twMerge('size-20 md:size-32 object-contain')} src={link.href} alt={`${link.label}-Icon`} />
                 </PartnerCard>
             ))}
         </div>
