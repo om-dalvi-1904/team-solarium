@@ -26,7 +26,7 @@ export default function Landing (){
     <>  
     <Navbar />
     <div>
-      <video src='/testing_compressed.mp4' className="w-screen h-screen object-cover m-0 p-0" autoPlay loop muted/>
+      <video src='/test_new.mp4' className="w-screen h-screen object-cover m-0 p-0" autoPlay loop muted/>
       <div className='bg-orange-600 py-5'></div>
       <div className='flex flex-col text-white'>
         <AnimatePresence>
