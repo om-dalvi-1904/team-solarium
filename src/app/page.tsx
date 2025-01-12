@@ -15,6 +15,7 @@ import invThreeTwo from '@/assets/inv3.2.png';
 import invFourLanding from '@/assets/Inv4Landing.png';
 import invFive from '@/assets/Inv5.png';
 import useSmoothScroll from '@/hooks/useSmoothScroll';
+import { PartnerGrid } from '@/components/ui/PartnerGrid';
 
 const anton = Anton({
   subsets: ['latin'],
@@ -23,6 +24,8 @@ const anton = Anton({
 const redRose = Red_Rose({
   subsets: ['latin'],
 });
+
+
 
 export default function Landing() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -144,7 +147,7 @@ export default function Landing() {
               isMobile &&
                 <motion.div
                 ref={legacyRef}
-                className="flex flex-col md:flex-row justify-start md:justify-end gap-2 px-4 overflow-hidden overflow-x-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+                className="flex flex-col md:flex-row justify-start md:justify-end gap-2 px-4 py-6 overflow-hidden overflow-x-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
               >
                 <CardCar carName="Incivtus 1.0" bgImageUrl={invOne} />
                 <CardCar carName="Invictus 2.0" bgImageUrl={invTwo} />
@@ -162,7 +165,7 @@ export default function Landing() {
                 ease: 'linear',
               }}
               ref={legacyRef}
-              className="hidden md:flex flex-col md:flex-row justify-start md:justify-end gap-2 px-4 overflow-hidden overflow-x-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+              className="hidden md:flex flex-col md:flex-row justify-start md:justify-end gap-2 px-4 py-6 overflow-hidden overflow-x-hidden [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)] md:[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
             >
               <CardCar carName="Incivtus 1.0" bgImageUrl={invOne} />
               <CardCar carName="Invictus 2.0" bgImageUrl={invTwo} />
@@ -171,6 +174,13 @@ export default function Landing() {
               <CardCar carName="Invictus 4.0" bgImageUrl={invFourLanding} />
               <CardCar carName="Invictus 5.0" bgImageUrl={invFive} />
             </motion.div>
+          </div>
+          <div className="bg-orange-600 py-5"></div>
+          <div className='bg-[#1e1e1e] px-4 pt-6 '>
+          <div className='flex flex-col'>
+            <a className={twMerge(redRose.className, 'text-2xl font-semibold')}>Our Partners</a>
+          </div>
+          <PartnerGrid />
           </div>
         </div>
       </div>
