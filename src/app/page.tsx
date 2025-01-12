@@ -16,10 +16,7 @@ const redRose = Red_Rose({
   subsets: ["latin"],
 });
 
-const cardContent = [
-  {title:'', src:''},
-  {}
-]
+
 export default function Landing (){
   const sectionRef = useRef<HTMLElement>(null);
   const invFourRef = useRef<HTMLDivElement>(null);
