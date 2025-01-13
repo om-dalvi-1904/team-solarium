@@ -1,12 +1,12 @@
 'use client';
 import { useState, useEffect } from "react";
+import useSmoothScroll from "@/hooks/useSmoothScroll";
 import { NavbarCommon } from "@/components/sections/NavbarCommon";
 import Image from "next/image";
 import teamPhoto from "@/assets/team.png";
 import { twMerge } from "tailwind-merge";
 import { Russo_One } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
-// import { TeamsBgc } from "@/components/ui/TeamsBgc";
 import frameFive from '@/assets/Frame.png';
 
 const russoOne = Russo_One({
@@ -16,6 +16,7 @@ const russoOne = Russo_One({
 });
 
 export default function MeetTheTeam() {
+    useSmoothScroll();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   // Update dimensions on load and resize
