@@ -18,7 +18,7 @@ export const Footer = () => {
     return (
         <>
         <div className="bg-orange-600 py-5"></div>
-        <div className={twMerge("bg-gradient-to-b from-[#1e1e1e] via-[#252525] to-[#0f0f0f] flex flex-col pt-6 px-4", redRose.className)}>
+        <div className={twMerge("bg-gradient-to-b from-[#1e1e1e] via-[#252525] to-[#0f0f0f] flex flex-col pt-6 px-4 text-white", redRose.className)}>
             <span className={twMerge('text-2xl font-extrabold',redRose.className)}>Team Solarium</span>
             <div className="grid grid-rows-1 md:hidden pt-20 pb-4">
                 <div className="flex flex-col">

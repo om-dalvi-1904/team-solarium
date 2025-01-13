@@ -8,6 +8,7 @@ import { twMerge } from "tailwind-merge";
 import { Russo_One } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
 import frameFive from '@/assets/Frame.png';
+import { Footer } from "@/components/sections/Footer";
 
 const russoOne = Russo_One({
   variable: "--font-russo-one",
@@ -77,6 +78,9 @@ export default function MeetTheTeam() {
       <div className="relative">
         <Image src={frameFive} alt="haw" className="object-cover w-full" />
         <div className="absolute inset-0 text-white">Nigga</div>
+      </div>
+      <div className="z-50">
+      <Footer />
       </div>
     </>
   );
