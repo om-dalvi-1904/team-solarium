@@ -8,7 +8,7 @@ interface PartnerCardProps {
   export const PartnerCard = ({ children, className }: PartnerCardProps) => {
     return (
       <div
-        className={`bg-[#1b1a1a] border border-orange-600 rounded-xl flex items-center justify-center py-6 ${className || ""}`}
+        className={`bg-neutral-500/30 border border-orange-600 rounded-xl flex items-center justify-center py-6 ${className || ""}`}
       >
         {children}
       </div>
