@@ -185,7 +185,7 @@ export default function Landing() {
           </div>
           <div className='pt-6 px-4 flex flex-col gap-6 pb-20'>
             <span className={twMerge('text-2xl font-extrabold',redRose.className)}>Support Us</span>
-            <div className='border border-white/40 rounded-2xl p-48 md:p-64'></div>
+            <div className='border border-white/40 rounded-2xl py-48 px-20 md:p-64'></div>
           </div>
           <Footer />
         </div>
