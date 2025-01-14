@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 import { Anton } from "next/font/google";
-// import { StaticImageData } from "next/image";
 
 // Load Anton font
 const anton = Anton({
