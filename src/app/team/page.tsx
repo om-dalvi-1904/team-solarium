@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from "react";
-import useSmoothScroll from "@/hooks/useSmoothScroll";
 import { NavbarCommon } from "@/components/sections/NavbarCommon";
 import Image from "next/image";
 import teamPhoto from "@/assets/team.png";

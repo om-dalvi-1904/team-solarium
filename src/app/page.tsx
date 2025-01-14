@@ -14,7 +14,6 @@ import invThree from '@/assets/inv3.png';
 import invThreeTwo from '@/assets/inv3.2.png';
 import invFourLanding from '@/assets/Inv4Landing.png';
 import invFive from '@/assets/Inv5.png';
-import useSmoothScroll from '@/hooks/useSmoothScroll';
 import { PartnerGrid } from '@/components/ui/PartnerGrid';
 import { Footer } from '@/components/sections/Footer';
 
@@ -53,7 +52,6 @@ export default function Landing() {
     };
   }, []);
 
-  useSmoothScroll();
 
   return (
     <>
