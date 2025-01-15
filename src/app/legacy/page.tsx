@@ -108,153 +108,153 @@ export default function Legacy () {
         </div>
         <Timeline data={[
             {title:'Invictus 1.0', content: <div>
-                Adventure Class Solar Electric Vehicle (2016-17)
-                Faculty Mentor: Dr. Anindita Roy
-                Team Members: 25 dedicated students
-                Key Highlights:
-                Weight: 144 kg | Dimensions: 2100mm x 1410mm x 863mm
+                <span className="block">Adventure Class Solar Electric Vehicle (2016-17)</span>
+                <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
+                <span className="block">Team Members: 25 dedicated students</span>
+                <span className="block">Key Highlights:</span>
+                <span className="block">Weight: 144 kg | Dimensions: 2100mm x 1410mm x 863mm
                 3-wheel tadpole configuration | Max Speed: 40 km/h
                 Brushless DC Motor (48V, 3000 rpm) | Lead-acid battery with 98% charging
-                efficiency
-                Solar Panel: Polycrystalline, 300W, 15% efficiency
-                Achievements:
-                🏆 1st in Pre-virtual, Technical Inspection, Autocross, and Acceleration
-                🏆 Best Design Award
-                🥉 Overall Ranking: 3rd
-                Invictus 1.0 marked Team Solarium&apos;s debut, setting a high standard in solar
-                electric vehicle innovation.
+                efficiency</span>
+                <span className="block">Solar Panel: Polycrystalline, 300W, 15% efficiency
+                Achievements:</span>
+                <span className="block">🏆 1st in Pre-virtual, Technical Inspection, Autocross, and Acceleration</span>
+                <span className="block">🏆 Best Design Award</span>
+                <span className="block">🥉 Overall Ranking: 3rd</span>
+                <span className="block">Invictus 1.0 marked Team Solarium&apos;s debut, setting a high standard in solar
+                electric vehicle innovation.</span>
             </div>,},
             {title:'Invictus 2.0', content:<div>
-                Solar Electric Vehicle with Carbon Fiber Monocoque Chassis 
-                Highlights
-                Faculty Mentor: Dr. Anindita Roy
-                Team Members: 37
-                About:
-                Team Solarium&apos;s first ESVC entry, featuring a carbon fiber monocoque
-                chassis—only the second in India to achieve this innovation.
-                Specifications:
-                Weight: 134 kg | Speed: 63 km/h
-                Motor: Brushless DC, 48V, 3000 rpm, 30 Nm torque
-                Battery: Li-ion, 98%-99% efficiency
-                Solar Panel: Monocrystalline, 610W, 22.3% efficiency
-                Unique Features: 4-speed DAQ system, semi-automatic gear shifting with
-                Arduino
-                Achievements:
-                🏆 1st in Pre-virtual and Technical Inspection
-                🏆 Best Design Award
-                🏅 Overall: 7th
-                Invictus 2.0 pushed boundaries in solar electric vehicle design and
-                innovation.
+                <span className="block">Solar Electric Vehicle with Carbon Fiber Monocoque Chassis 
+                Highlights</span>
+                <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
+                <span className="block">Team Members: 37</span>
+                <span className="block">About:</span>
+                <span className="block">Team Solarium&apos;s first ESVC entry, featuring a carbon fiber monocoque
+                chassis—only the second in India to achieve this innovation.</span>
+                <span className="block">Specifications:</span>
+                <span className="block">Weight: 134 kg | Speed: 63 km/h</span>
+                <span className="block">Motor: Brushless DC, 48V, 3000 rpm, 30 Nm torque</span>
+                <span className="block">Battery: Li-ion, 98%-99% efficiency</span>
+                <span className="block">Solar Panel: Monocrystalline, 610W, 22.3% efficiency</span>
+                <span className="block">Unique Features: 4-speed DAQ system, semi-automatic gear shifting with
+                Arduino</span>
+                <span className="block">Achievements:</span>
+                <span className="block">🏆 1st in Pre-virtual and Technical Inspection</span>
+                <span className="block">🏆 Best Design Award</span>
+                <span className="block">🏅 Overall: 7th</span>
+                <span className="block">Invictus 2.0 pushed boundaries in solar electric vehicle design and
+                innovation.</span>
             </div>},
             {title: 'Invictus 3.0', content:<div>
-                Solar Vehicle with Semi-Automatic Gear Shifting 
-                Faculty Mentor: Dr. Anindita Roy
-                Team Members: 37
-                Overview:
-                Competing in ESVC, Invictus 3.0 features a carbon fiber monocoque chassis,
-                semi-automatic gear shifting, and advanced solar components.
-                Specifications:
-                Weight: 180 kg | Speed: 70 km/h
-                Motor: Brushless DC, 48V, 3200 rpm, 36 Nm torque
-                Battery: Li-ion
-                Solar Panel: 404W, 24.2% efficiency, 2.6m2
-                Features: Electronic gear shifting, IoT integration, semi-flexible solar array
-                Achievements:
-                🏆 1st in Pre-virtual, Technical Inspection & Hill Climb
-                🏆 2nd in Autocross
-                🏆 Best Design Award
-                🥈 Overall Rank: 4th
-                Invictus 3.0 pushed the limits in solar vehicle design and performance.
+                <span className="block">Solar Vehicle with Semi-Automatic Gear Shifting</span>
+                <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
+                <span className="block">Team Members: 37</span>
+                <span className="block">Overview:</span>
+                <span className="block">Competing in ESVC, Invictus 3.0 features a carbon fiber monocoque chassis,
+                semi-automatic gear shifting, and advanced solar components.</span>
+                <span className="block">Specifications:</span>
+                <span className="block">Weight: 180 kg | Speed: 70 km/h</span>
+                <span className="block">Motor: Brushless DC, 48V, 3200 rpm, 36 Nm torque</span>
+                <span className="block">Battery: Li-ion</span>
+                <span className="block">Solar Panel: 404W, 24.2% efficiency, 2.6m2</span>
+                <span className="block">Features: Electronic gear shifting, IoT integration, semi-flexible solar array</span>
+                <span className="block">Achievements:</span>
+                <span className="block">🏆 1st in Pre-virtual, Technical Inspection & Hill Climb</span>
+                <span className="block">🏆 2nd in Autocross</span>
+                <span className="block">🏆 Best Design Award</span>
+                <span className="block">🥈 Overall Rank: 4th</span>
+                <span className="block">Invictus 3.0 pushed the limits in solar vehicle design and performance.</span>
             </div>},
             {
                 title: 'Invictus 3.1' , content: <div>
-                    Solar Electric Vehicle with Autonomous Abilities and Automatic Gear Shifting 
-                    Faculty Mentor: Dr. Anindita Roy
-                    Team Members: 37
-                    Overview:
-                    Invictus 3.1 is an upgraded, autonomous solar vehicle with automatic gear
+                    <span className="block">Solar Electric Vehicle with Autonomous Abilities and Automatic Gear Shifting</span>
+                    <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
+                    <span className="block">Team Members: 37</span>
+                    <span className="block">Overview:</span>
+                    <span className="block">Invictus 3.1 is an upgraded, autonomous solar vehicle with automatic gear
                     shifting and a carbon fiber battery box. Although the COVID-19 lockdown
                     prevented physical participation in ESVC 2020, the team excelled in the
-                    virtual event.
-                    Specifications:
-                    Weight: 180 kg | Speed: 81 km/h
-                    Motor: Brushless DC
-                    Battery: Li-ion, 105 Ah
-                    Solar Panel: 2.1m2, 24.2% efficiency
-                    Features:
-                    IBM Watson cloud platform for real-time data
+                    virtual event.</span>
+                    <span className="block">Specifications:</span>
+                    <span className="block">Weight: 180 kg | Speed: 81 km/h</span>
+                    <span className="block">Motor: Brushless DC</span>
+                    <span className="block">Battery: Li-ion, 105 Ah</span>
+                    <span className="block">Solar Panel: 2.1m2, 24.2% efficiency</span>
+                    <span className="block">Features:</span>
+                    <span className="block">IBM Watson cloud platform for real-time data
                     Image processing & path planning for autonomous navigation
-                    2-speed gear reduction, automatic shifting with Arduino & speed sensor
-                    Achievements:
-                    🏆 1st in Pre-virtual & Team Video
-                    🥈 2nd in Innovation Presentation & Autonomous Concept
-                    🥉 3rd in Design Presentation
-                    🥈 Overall Rank: 2nd
-                    Invictus 3.1 set new standards in autonomous solar vehicle design.
+                    2-speed gear reduction, automatic shifting with Arduino & speed sensor</span>
+                    <span className="block">Achievements:</span>
+                    <span className="block">🏆 1st in Pre-virtual & Team Video</span>
+                    <span className="block">🥈 2nd in Innovation Presentation & Autonomous Concept</span>
+                    <span className="block">🥉 3rd in Design Presentation</span>
+                    <span className="block">🥈 Overall Rank: 2nd</span>
+                    <span className="block">Invictus 3.1 set new standards in autonomous solar vehicle design.</span>
                 </div>
             },
             {
                 title: 'Invictus 3.2' , content: <div>
                     Aerodynamically Upgraded Version 
-                    Faculty Mentor: Dr. Anindita Roy
+                    <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
                     <span className="block">
                         Team Members: 37
                     </span>
                     <span className="block">Overview:</span>
-                    Invictus 3.2 features aerodynamic upgrades and additional luggage space.
+                    <span className="block">Invictus 3.2 features aerodynamic upgrades and additional luggage space.
                     Designed for the virtual Saur Urja Vehicle Championship 5.0, it highlights Team
-                    Solarium&apos;s innovation.
-                    Specifications:
-                    Weight: 180 kg | Battery: Li-ion, 105 Ah
-                    Motor: Brushless DC | Solar Panel: 2.1m2, 24.2% efficiency
-                    Features: SAE Level 3 Autonomous | IBM Watson cloud monitoring | 2-speed
-                    gear reduction
-                    Achievements:
-                    🏆 1st in Engineering Design, Rulebook, Marketing Report, DVP & DFMEA
-                    🥈 2nd in Business Plan
-                    🥉 3rd in Innovations
-                    🏆 Overall Winner of SUVC 5.0 Championship
-                    Invictus 3.2 dominated SUVC 5.0 with top ranks in multiple categories.
+                    Solarium&apos;s innovation.</span>
+                    <span className="block">Specifications:</span>
+                    <span className="block">Weight: 180 kg | Battery: Li-ion, 105 Ah</span>
+                    <span className="block">Motor: Brushless DC | Solar Panel: 2.1m2, 24.2% efficiency</span>
+                    <span className="block">Features: SAE Level 3 Autonomous | IBM Watson cloud monitoring | 2-speed
+                    gear reduction</span>
+                    <span className="block">Achievements:</span>
+                    <span className="block">🏆 1st in Engineering Design, Rulebook, Marketing Report, DVP & DFMEA</span>
+                    <span className="block">🥈 2nd in Business Plan</span>
+                    <span className="block">🥉 3rd in Innovations</span>
+                    <span className="block">🏆 Overall Winner of SUVC 5.0 Championship</span>
+                    <span className="block">Invictus 3.2 dominated SUVC 5.0 with top ranks in multiple categories.</span>
                 </div>
             },
             {
                 title: 'Invictus 4.0' , content: <div>
-                    Aerodynamically Sound Closed Cockpit Single Seat SEV for Indian
-                    Roads 
-                    Faculty Mentor: Dr. Anindita Roy
-                    Team Members: 30
-                    Overview:
-                    Invictus 4.0, designed for Indian roads, was built to compete in the
+                    <span className="block">Aerodynamically Sound Closed Cockpit Single Seat SEV for Indian
+                    Roads</span>
+                    <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
+                    <span className="block">Team Members: 30</span>
+                    <span className="block">Overview:</span>
+                    <span className="block">Invictus 4.0, designed for Indian roads, was built to compete in the
                     ESVC3000+ solar car rally from Chandigarh to Pune, covering 2200
-                    km. It&apos;s one of Team Solarium&apos;s most advanced vehicles.
-                    Specifications:
-                    Weight: 217 kg | Battery: Li-ion, 90 Ah
-                    Motor: Brushless DC Hub Motors | Solar Panel: 4m2, 20% efficiency
-                    Features: SAE Level 4 Autonomous | Radio telemetry for real-time
-                    data | Electronic differential system
-                    Achievements:
-                    🏅 2nd Runner Up | Best Engineering Design Report
-                    🏆 Best Solar Performance | 2nd in Business Plan & Cost Plan
-                    🥈 2nd in Solar Car Rally
-                    Invictus 4.0 excelled with top rankings in engineering and
-                    performance at the ESVC3000+.
+                    km. It&apos;s one of Team Solarium&apos;s most advanced vehicles.</span>
+                    <span className="block">Specifications:</span>
+                    <span className="block">Weight: 217 kg | Battery: Li-ion, 90 Ah</span>
+                    <span className="block">Motor: Brushless DC Hub Motors | Solar Panel: 4m2, 20% efficiency</span>
+                    <span className="block">Features: SAE Level 4 Autonomous | Radio telemetry for real-time
+                    data | Electronic differential system</span>
+                    <span className="block">Achievements:</span>
+                    <span className="block">🏅 2nd Runner Up | Best Engineering Design Report</span>
+                    <span className="block">🏆 Best Solar Performance | 2nd in Business Plan & Cost Plan</span>
+                    <span className="block">🥈 2nd in Solar Car Rally</span>
+                    <span className="block">Invictus 4.0 excelled with top rankings in engineering and
+                    performance at the ESVC3000+.</span>
                 </div>
             },
             {
                 title: 'Invictus 5.0' , content: <div>
-                    Innovative Solar Vehicle for a Sustainable Future 
-                    Event: National Solar Vehicle Challenge (NSVC), VNIT Nagpur
-                    Overview:
-                    Invictus 5.0, Team Solarium&apos;s sleek 3-wheeled, tadpole-configured
+                    <span className="block">Innovative Solar Vehicle for a Sustainable Future</span>
+                    <span className="block">Event: National Solar Vehicle Challenge (NSVC), VNIT Nagpur</span>
+                    <span className="block">Overview:</span>
+                    <span className="block">Invictus 5.0, Team Solarium&apos;s sleek 3-wheeled, tadpole-configured
                     solar vehicle, showcased our commitment to innovation and clean
                     energy. At the NSVC 2023, we pushed the limits of solar-powered
-                    mobility.
-                    Achievements:
-                    🏆 Overall Champions | Best Solar Endurance Award
-                    🥈 Runner-Up in Endurance | Best Crosspad-B Award
-                    📊 Best Business Plan
-                    Invictus 5.0 is a testament to Team Solarium&apos;s dedication to building
-                    sustainable, cutting-edge vehicles for a greener tomorrow.
+                    mobility.</span>
+                    <span className="block">Achievements:</span>
+                    <span className="block">🏆 Overall Champions | Best Solar Endurance Award</span>
+                    <span className="block">🥈 Runner-Up in Endurance | Best Crosspad-B Award</span>
+                    <span className="block">📊 Best Business Plan</span>
+                    <span className="block">Invictus 5.0 is a testament to Team Solarium&apos;s dedication to building
+                    sustainable, cutting-edge vehicles for a greener tomorrow.</span>
 
                 </div>
             }
