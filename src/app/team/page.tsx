@@ -84,7 +84,7 @@ export default function MeetTheTeam() {
         <Image src={frameFive} alt="haw" className="object-cover w-full" />
         <Image src={frameFive} alt="haw" className="object-cover w-full md:hidden" />
         
-        <div className="absolute inset-0 text-white">
+        <div className="absolute block inset-0 text-white">
            <div className="grid grid-cols-2 pt-24 lg:pt-48 px-2 justify-center">
                 <MemberCard memberPosition="Team Lead" memberImage={teamLead} memberName="MALHAR PATIL" isBorder isPositionBlack />
                 <MemberCard memberPosition="Team Co-Lead" memberImage={teamCoLead} memberName="SHIVANI TELI" isBorder isPositionBlack />

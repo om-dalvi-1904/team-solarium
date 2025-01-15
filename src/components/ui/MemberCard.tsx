@@ -24,7 +24,7 @@ export const MemberCard = (props: {
                 {/* Wrap memberPosition with a container */}
                 <div
                     className={twMerge(
-                        "flex justify-center px-[9.7px] md:px-[42.2px] w-full",
+                        "flex justify-center px-[9.7px] md:px-[42.2px] w-full md:w-full",
                         isPositionBlack ? "bg-black text-white font-semibold" : "bg-white text-orange-600 font-semibold"
                     )}
                 >
