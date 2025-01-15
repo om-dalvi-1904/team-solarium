@@ -197,11 +197,13 @@ export default function Legacy () {
                 title: 'Invictus 3.2' , content: <div>
                     Aerodynamically Upgraded Version 
                     Faculty Mentor: Dr. Anindita Roy
-                    Team Members: 37
-                    Overview:
+                    <span className="block">
+                        Team Members: 37
+                    </span>
+                    <span className="block">Overview:</span>
                     Invictus 3.2 features aerodynamic upgrades and additional luggage space.
                     Designed for the virtual Saur Urja Vehicle Championship 5.0, it highlights Team
-                    Solarium's innovation.
+                    Solarium&apos;s innovation.
                     Specifications:
                     Weight: 180 kg | Battery: Li-ion, 105 Ah
                     Motor: Brushless DC | Solar Panel: 2.1m2, 24.2% efficiency
