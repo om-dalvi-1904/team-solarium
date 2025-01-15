@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavbarCommon } from "@/components/sections/NavbarCommon";
 import Image from "next/image";
 import teamPhoto from "@/assets/team.png";
@@ -21,6 +21,7 @@ const russoOne = Russo_One({
 
 export default function MeetTheTeam() {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  const cardsRef = useRef<HTMLDivElement>(null);
 
   // Update dimensions on load and resize
   useEffect(() => {
@@ -38,11 +39,12 @@ export default function MeetTheTeam() {
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
 
+  const cardsHeight = cardsRef.current ? cardsRef.current.offsetHeight : 0;
+
   return (
     <>
       <NavbarCommon />
 
-      {/* Hero Section */}
       <div className="relative">
         <Image
           src={teamPhoto}
@@ -51,7 +53,7 @@ export default function MeetTheTeam() {
           width={dimensions.width}
           height={
             dimensions.width < 768
-              ? (dimensions.width * 9) / 16  // Maintain 16:9 ratio for small devices
+              ? (dimensions.width * 9) / 16  
               : dimensions.width < 1024
               ? Math.min(dimensions.height, 400)
               : Math.min(dimensions.height, 500)
@@ -78,47 +80,53 @@ export default function MeetTheTeam() {
         </AnimatePresence>
       </div>
       <div className="relative">
-        {/* <div className="relative h-screen bg-center bg-repeat-y" style={{backgroundImage:`url(${frameFive.src})`}}>
-
-        </div> */}
-        <Image src={frameFive} alt="haw" className="object-cover w-full" />
-        <Image src={frameFive} alt="haw" className="object-cover w-full md:hidden" />
-        
+        <Image src={frameFive} alt="haw" className="object-cover w-full" 
+          style={{
+            height: cardsHeight > 0 ? `${cardsHeight}px` : '2000px'
+          }}
+        />
         <div className="absolute block inset-0 text-white">
+          <div ref={cardsRef}>
            <div className="grid grid-cols-2 pt-24 lg:pt-48 px-2 justify-center">
                 <MemberCard memberPosition="Team Lead" memberImage={teamLead} memberName="MALHAR PATIL" isBorder isPositionBlack />
                 <MemberCard memberPosition="Team Co-Lead" memberImage={teamCoLead} memberName="SHIVANI TELI" isBorder isPositionBlack />
            </div>
-           <div className="grid grid-cols-3 gap-5 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-40">
+           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-14 lg:gap-5 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-40">
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
+            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder className="lg:hidden" />
            </div>
-           <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
+           <div className="grid grid-cols-2 gap-4 md:gap-12 lg:gap-4 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
            </div>
-           <div className="grid grid-cols-3 gap-5 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
+           <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-14 lg:gap-5 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
+            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange className="lg:hidden" />
            </div>
-           <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-           </div>
-           <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
+           <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
            </div>
-           <div className="grid grid-cols-3 gap-5 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
+           <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
+            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+           </div>
+           <div className="grid grid-col-1 lg:hidden items-center justify-center pt-20 md:pt-56">
+            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+           </div>
+           <div className="lg:grid grid-cols-3 hidden gap-5 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
            </div>
+           </div>
         </div>
       </div>
-      <div className="z-50">
+      <div className="z-50 mt-16">
       <Footer />
       </div>
     </>

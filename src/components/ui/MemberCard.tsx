@@ -15,11 +15,12 @@ export const MemberCard = (props: {
     memberName?: string;
     memberImage: StaticImageData;
     memberPosition?: string;
+    className?: string;
 }) => {
-    const { isPositionBlack, isNameOrange, isBorder, memberName, memberImage, memberPosition } = props;
+    const { isPositionBlack, isNameOrange, isBorder, memberName, memberImage, memberPosition, className } = props;
 
     return (
-        <div className={twMerge("flex flex-col items-center")}>
+        <div className={twMerge("flex flex-col items-center", className)}>
             <div className="flex flex-col items-center">
                 {/* Wrap memberPosition with a container */}
                 <div
