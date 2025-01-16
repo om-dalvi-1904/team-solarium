@@ -34,7 +34,6 @@ const Navbar = forwardRef<HTMLDivElement, { supportRef: React.RefObject<HTMLDivE
     const handleScroll = (ref: React.RefObject<HTMLDivElement | null>) => {
       if (ref.current) {
         ref.current.scrollIntoView({ behavior: 'smooth' });
-        setIsOpen(false); // Close menu after scrolling
       }
     };
 
