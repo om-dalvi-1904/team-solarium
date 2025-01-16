@@ -1,6 +1,6 @@
 'use client';
 import aboutUsImage from '@/assets/aboutUs.png';
-import { useState, useEffect} from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { NavbarCommon } from '@/components/sections/NavbarCommon';
 import { Red_Rose } from 'next/font/google';
@@ -10,6 +10,7 @@ import fiveImage from '@/assets/five.png';
 import sasolImage from '@/assets/sasol-solar-challenge.png';
 import invFourImage from '@/assets/Invictus photo (91) 1.png';
 import { Footer } from '@/components/sections/Footer';
+import { motion, useInView } from 'framer-motion';
 
 const redRose = Red_Rose({
   variable: '--font-red-rose',
@@ -18,6 +19,10 @@ const redRose = Red_Rose({
 
 export default function About() {
       const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+      const headingRef = useRef<HTMLDivElement>(null);
+      const headingTwoRef = useRef<HTMLDivElement>(null);
+      const isHeadingTwo = useInView(headingTwoRef, { once: true });
+      const isHeadingRef = useInView(headingRef, { once: true });
     
       // Update dimensions on load and resize
       useEffect(() => {
@@ -39,6 +44,11 @@ export default function About() {
             <NavbarCommon />
 
             <div className="relative">
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: "linear" }}
+                className='relative'>
             <Image
                 src={aboutUsImage}
                 alt="Team Photo"
@@ -53,13 +63,19 @@ export default function About() {
                 }
                 priority
             />
+                </motion.div>
             </div>
             <div className='bg-[#1E1E1E] text-white py-6 flex flex-col'>
-                <div className={twMerge(redRose.className, 'text-4xl md:text-7xl px-4 font-semibold')}>
+                <motion.div 
+                    initial={{ x: '-60%' }}
+                    animate={isHeadingRef ? { x:0 } : {}}
+                    transition={{ duration: 0.5, ease: 'linear' }}
+                    ref={headingRef}
+                className={twMerge(redRose.className, 'text-4xl md:text-7xl px-4 font-semibold')}>
                     <h1 className='block'>SUN TO LEAD,{" "}</h1>
                     <span className='block'><span className='text-orange-600'>ENGINEERING</span> TO</span>
                     <span>SUCCEED.</span>
-                </div>
+                </motion.div>
                 <div className='md:grid md:grid-cols-2 lg:gap-36'>
                 <div className={twMerge(redRose.className, 'text-sm md:text-lg px-4 py-8')}>
                     <span className='block py-2'>At Team Solarium, we are fueled by a shared vision of promoting renewable energy and driving sustainable innovation.</span>
@@ -112,10 +128,15 @@ export default function About() {
                 </div>
             </div>
             <div className='text-white py-4'>
-            <div className={twMerge(redRose.className, 'text-3xl md:text-7xl text-right px-4 font-semibold')}>
+            <motion.div 
+                initial={{ x:'100%' }}
+                animate={isHeadingTwo? { x:0 } : {}}
+                transition={{ duration: 0.5, ease: 'linear' }}
+                ref={headingTwoRef}
+            className={twMerge(redRose.className, 'text-3xl md:text-7xl text-right px-4 font-semibold')}>
                 <p>REV UP THE ACTION</p>
                 <p>WITH <span className='text-orange-600'>ELECTRIFYING</span> EVENTS</p>
-            </div>   
+            </motion.div>   
             </div>
             <div className='bg-[#1E1E1E] flex flex-col pb-16'>
                 <div className='px-4 py-4 text-orange-600'>

@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useEffect, useState } from 'react';
-import { Navbar } from '@/components/sections/Navbar';
+import Navbar from '@/components/sections/Navbar';
 import { twMerge } from 'tailwind-merge';
 import { Anton } from 'next/font/google';
 import { AnimatePresence, motion, useInView } from 'motion/react';
@@ -31,6 +31,8 @@ export default function Landing() {
   const sectionRef = useRef<HTMLElement>(null);
   const invFourRef = useRef<HTMLDivElement>(null);
   const legacyRef = useRef<HTMLDivElement>(null);
+  const supportRef = useRef<HTMLDivElement>(null);
+  const partnersRef = useRef<HTMLDivElement>(null);
 
   const isView = useInView(invFourRef, { once: true });
   const isInView = useInView(sectionRef, { once: true });
@@ -55,7 +57,7 @@ export default function Landing() {
 
   return (
     <>
-      <Navbar />
+      <Navbar partnersRef={partnersRef} supportRef={supportRef} />
       <div className='overflow-x-hidden'>
         <video
           src="https://res.cloudinary.com/dl4tccguh/video/upload/v1737023463/output_pickka.mp4"
@@ -175,13 +177,13 @@ export default function Landing() {
             </motion.div>
           </div>
           <div className="bg-orange-600 py-5"></div>
-          <div className='bg-[#1e1e1e] px-4 pt-6 '>
+          <div className='bg-[#1e1e1e] px-4 pt-6' ref={partnersRef}>
           <div className='flex flex-col'>
             <a className={twMerge(redRose.className, 'text-2xl font-extrabold')}>Our Partners</a>
           </div>
           <PartnerGrid />
           </div>
-          <div className='pt-6 px-4 flex flex-col gap-6 pb-20'>
+          <div className='pt-6 px-4 flex flex-col gap-6 pb-20' ref={supportRef}>
             <span className={twMerge('text-2xl font-extrabold',redRose.className)}>Support Us</span>
             <div className='border border-white/40 rounded-2xl py-48 px-20 md:p-64'></div>
           </div>
