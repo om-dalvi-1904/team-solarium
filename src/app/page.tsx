@@ -58,7 +58,7 @@ export default function Landing() {
       <Navbar />
       <div className='overflow-x-hidden'>
         <video
-          src="/testing.mp4"
+          src="https://res.cloudinary.com/dl4tccguh/video/upload/v1737020884/testing_cropped_r4hjzb.mp4"
           className="w-screen h-screen object-cover m-0 p-0"
           autoPlay
           loop
