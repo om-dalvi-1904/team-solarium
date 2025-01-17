@@ -6,7 +6,7 @@ import { NavbarCommon } from '@/components/sections/NavbarCommon';
 import { Red_Rose } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 import { Button } from '@/components/ui/button';
-import fiveImage from '@/assets/five.png';
+import fiveImage from '@/assets/inv5A.png';
 import sasolImage from '@/assets/sasol-solar-challenge.png';
 import invFourImage from '@/assets/Invictus photo (91) 1.png';
 import { Footer } from '@/components/sections/Footer';
@@ -67,7 +67,7 @@ export default function About() {
             </div>
             <div className='bg-[#1E1E1E] text-white py-6 flex flex-col'>
                 <motion.div 
-                    initial={{ x: '-60%' }}
+                    initial={{ x: '-90%' }}
                     animate={isHeadingRef ? { x:0 } : {}}
                     transition={{ duration: 0.5, ease: 'linear' }}
                     ref={headingRef}
@@ -76,7 +76,7 @@ export default function About() {
                     <span className='block'><span className='text-orange-600'>ENGINEERING</span> TO</span>
                     <span>SUCCEED.</span>
                 </motion.div>
-                <div className='md:grid md:grid-cols-2 lg:gap-36'>
+                <div className='md:grid md:grid-cols-2 lg:gap-20'>
                 <div className={twMerge(redRose.className, 'text-sm md:text-lg px-4 py-8')}>
                     <span className='block py-2'>At Team Solarium, we are fueled by a shared vision of promoting renewable energy and driving sustainable innovation.</span>
 
@@ -102,7 +102,7 @@ export default function About() {
                 <Image
                 src={fiveImage}
                 alt="Inv 5.0"
-                className="object-cover w-auto h-auto pt-8"
+                className="object-cover aspect-auto w-auto h-auto pt-8"
                 height={
                 dimensions.width < 768
                     ? (dimensions.width * 9) / 16  
@@ -127,12 +127,11 @@ export default function About() {
                     </a>
                 </div>
             </div>
-            <div className='text-white py-4'>
+            <div className='text-white py-4' ref={headingTwoRef}>
             <motion.div 
                 initial={{ x:'100%' }}
                 animate={isHeadingTwo? { x:0 } : {}}
                 transition={{ duration: 0.5, ease: 'linear' }}
-                ref={headingTwoRef}
             className={twMerge(redRose.className, 'text-3xl md:text-7xl text-right px-4 font-semibold')}>
                 <p>REV UP THE ACTION</p>
                 <p>WITH <span className='text-orange-600'>ELECTRIFYING</span> EVENTS</p>

@@ -103,13 +103,12 @@ export default function Landing() {
               className="size-64 md:size-96 object-cover relative z-30 -mt-10"
             />
           </motion.div>
-          <div className="bg-[#252525] py-10 -mt-24 md:-mt-36 grid grid-rows-2 md:grid-cols-2 md:pt-28 md:pb-6">
-            <span className=""></span>
+          <div className="bg-[#252525] py-10 -mt-24 md:-mt-36 grid grid-rows-1 md:grid-cols-1 md:px-10 md:pt-16 md:pb-6">
             <div className={twMerge(redRose.className, 'flex flex-col px-2')}>
               <h2
                 className={twMerge(
                   redRose.className,
-                  'text-lg md:text-2xl tracking-wide md:tracking-wider'
+                  'text-lg md:text-2xl lg:text-4xl tracking-wide md:tracking-wider'
                 )}
               >
                 At Team Solarium, we are fueled by a shared vision of promoting

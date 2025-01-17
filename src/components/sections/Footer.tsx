@@ -35,15 +35,15 @@ export const Footer = () => {
                     <span className="py-4 text-lg font-medium">Email: teamsolarium@gmail.com</span>
                     <div className="py-7 flex flex-col">
                         <span className="text-xl tracking-wide font-semibold">Connect with us</span>
-                        <div className="py-4 flex flex-row gap-5">
+                        <div className="py-4 flex flex-row gap-2">
                             <a className="p-0 m-0" href="https://www.linkedin.com/company/team-solarium/" target="__blank">
-                                <Linkedin className="size-10" />
+                                <Linkedin className="size-8" />
                             </a>
                             <a className="p-0 m-0" href="https://www.instagram.com/teamsolarium_india/" target="__blank">
-                                <Instagram className="size-10" />
+                                <Instagram className="size-8" />
                             </a>
                             <a className="p-0 m-0" href="https://www.instagram.com/teamsolarium_india/" target="__blank">
-                                <Facebook className="size-10" />
+                                <Facebook className="size-8" />
                             </a>
                         </div>
                         <div className={twMerge("pt-10 text-white/60 text-center flex flex-col", inter.className)}>
@@ -70,15 +70,15 @@ export const Footer = () => {
                         <span className="py-4 text-lg font-medium">Email: teamsolarium@gmail.com</span>
                         <div className="py-7 flex flex-col">
                             <span className="text-xl tracking-wide font-semibold">Connect with us</span>
-                            <div className="py-4 flex flex-row gap-5">
+                            <div className="py-4 flex flex-row gap-2">
                                 <a className="p-0 m-0" href="https://www.linkedin.com/company/team-solarium/" target="__blank">
-                                    <Linkedin className="size-10" />
+                                    <Linkedin className="size-8" />
                                 </a>
                                 <a className="p-0 m-0" href="https://www.instagram.com/teamsolarium_india/" target="__blank">
-                                    <Instagram className="size-10" />
+                                    <Instagram className="size-8" />
                                 </a>
                                 <a className="p-0 m-0" href="https://www.instagram.com/teamsolarium_india/" target="__blank">
-                                    <Facebook className="size-10" />
+                                    <Facebook className="size-8" />
                                 </a>
                             </div>
                         </div>

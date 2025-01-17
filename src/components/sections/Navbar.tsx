@@ -18,7 +18,6 @@ const redRose = Red_Rose({
 });
 
 const navLinks = [
-  { text: "EVENTS", href: '/events', id: 1 },
   { text: "ABOUT", href: '/about', id: 2 },
   { text: "SUPPORT US", id: 3 },
   { text: "LEGACY", href: '/legacy', id: 4 },
