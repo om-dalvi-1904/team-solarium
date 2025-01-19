@@ -16,8 +16,11 @@ export const MemberCard = (props: {
     memberImage: StaticImageData;
     memberPosition?: string;
     className?: string;
+    classNamePosition?: string;
+    classNameImage?: string;
+    classNameName?: string;
 }) => {
-    const { isPositionBlack, isNameOrange, isBorder, memberName, memberImage, memberPosition, className } = props;
+    const { isPositionBlack, isNameOrange, isBorder, memberName, memberImage, memberPosition, className, classNamePosition, classNameName,classNameImage } = props;
 
     return (
         <div className={twMerge("flex flex-col items-center", className)}>
@@ -26,7 +29,7 @@ export const MemberCard = (props: {
                 <div
                     className={twMerge(
                         "flex justify-center px-[9.7px] md:px-[42.2px] w-full md:w-full",
-                        isPositionBlack ? "bg-black text-white font-semibold" : "bg-white text-orange-600 font-semibold"
+                        isPositionBlack ? "bg-black text-white font-semibold" : "bg-white text-orange-600 font-semibold", classNamePosition
                     )}
                 >
                     <span
@@ -44,7 +47,8 @@ export const MemberCard = (props: {
                     alt={`${memberName}-photo`}
                     className={twMerge(
                         "size-32 md:size-48 object-cover w-full md:w-full",
-                        isBorder ? "border-4 border-orange-600" : "border-4 border-black"
+                        isBorder ? "border-4 border-orange-600" : "border-4 border-black",
+                        classNameImage
                     )}
                 />
                 {/* Wrap memberName with a container */}
@@ -55,7 +59,8 @@ export const MemberCard = (props: {
                         className={twMerge(
                             redRose.className,
                             "text-xl md:text-2xl tracking-wide text-center font-semibold",
-                            isNameOrange ? "text-orange-600" : "text-white"
+                            isNameOrange ? "text-orange-600" : "text-white",
+                            classNameName
                         )}
                     >
                         {memberName}

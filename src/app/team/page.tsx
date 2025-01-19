@@ -12,6 +12,20 @@ import { MemberCard } from "@/components/ui/MemberCard";
 import teamLead from '@/assets/malhar_patil.png';
 import teamCoLead from '@/assets/shivani_teli.png';
 import marketingLead from '@/assets/aishwarya_more.png';
+import chassisLead from '@/assets/team_mem/yash_wabhal.png';
+import testPlanLead from '@/assets/team_mem/mihir_pala.png';
+import aeroLead from '@/assets/team_mem/aditi_salunkhe.png';
+import lowVoltLead from '@/assets/team_mem/vedant_joshi.png';
+import aeroEngg from '@/assets/team_mem/nishwas_deva.png';
+import structEngg from '@/assets/team_mem/darshan_shenkar.png';
+import suspensionEngg from '@/assets/team_mem/om_vishnu.png';
+import suspensionEngg2 from '@/assets/team_mem/raj_dan.png';
+import steeringEngg from '@/assets/team_mem/aryan_jadhav.png';
+import brakesEngg from '@/assets/team_mem/amey_tambe.png';
+import brakesEngg2 from '@/assets/team_mem/shruti_jadhav.png';
+import voltEngg from '@/assets/team_mem/rohan_patil.png';
+import solarEngg from '@/assets/team_mem/adwait_kul.png';
+import autoEngg from '@/assets/team_mem/sanika_bhalge.png';
 
 const russoOne = Russo_One({
   variable: "--font-russo-one",
@@ -87,41 +101,47 @@ export default function MeetTheTeam() {
         />
         <div className="absolute block inset-0 text-white">
           <div ref={cardsRef}>
-           <div className="grid grid-cols-2 pt-24 lg:pt-48 px-2 justify-center">
+           <div className="grid grid-cols-2 pt-24 lg:pt-48 px-2 justify-center items-center">
                 <MemberCard memberPosition="Team Lead" memberImage={teamLead} memberName="MALHAR PATIL" isBorder isPositionBlack />
                 <MemberCard memberPosition="Team Co-Lead" memberImage={teamCoLead} memberName="SHIVANI TELI" isBorder isPositionBlack />
            </div>
            <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-14 lg:gap-5 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-40">
             <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder className="lg:hidden" />
+            <MemberCard memberPosition="Chassis Lead" memberImage={chassisLead} memberName="YASH WAVHAL" isBorder isNameOrange classNameImage="w-[188px]" className="h-[212px]" />
+            <MemberCard memberPosition="Testing & Planning Lead" memberImage={testPlanLead} memberName="MIHIR PAWSKAR" isBorder isNameOrange />
+            <MemberCard memberPosition="Low Voltage & DAQ Lead" memberImage={lowVoltLead} memberName="VEDANT JOSHI" isBorder isNameOrange className="lg:hidden" />
            </div>
            <div className="grid grid-cols-2 gap-4 md:gap-12 lg:gap-4 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+            <MemberCard memberPosition="Low Voltage & DAQ Lead" memberImage={lowVoltLead} memberName="VEDANT JOSHI" isBorder className="hidden lg:inline-flex" />
+            <MemberCard memberPosition="Aerodynamics Lead" memberImage={aeroLead} memberName="ADITI SALUNKHE" isBorder />
+            <MemberCard memberPosition="Aerodynamics Engg" memberImage={aeroEngg} memberName="VISHWAS DEVADIGA" isBorder className="lg:hidden" />
            </div>
            <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 md:gap-14 lg:gap-5 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
-           <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder isNameOrange className="lg:hidden" />
+            <MemberCard memberPosition="Aerodynamics Engg" memberImage={aeroEngg} memberName="VISHWAS DEVADIGA" isBorder isNameOrange className="hidden lg:inline-flex" />
+            <MemberCard memberPosition="Structural & Composites Engg" memberImage={structEngg} memberName="DARSHAN SHENKAR" isBorder isNameOrange />
+            <MemberCard memberPosition="Suspension Engg" memberImage={suspensionEngg} memberName="OM VISHNU" isBorder isNameOrange />
+            <MemberCard memberPosition="Suspension Engg" memberImage={suspensionEngg2} memberName="RAJ DHANJODE" isBorder isNameOrange className="lg:hidden" />
+            <MemberCard memberPosition="Steering Engg" memberImage={steeringEngg} memberName="ARYAN JADHAV" isBorder isNameOrange className="lg:hidden" />
            </div>
            <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+            <MemberCard memberPosition="Suspension Engg" memberImage={suspensionEngg2} memberName="RAJ DHANJODE" isBorder className="hidden lg:inline-flex" />
+            <MemberCard memberPosition="Steering Engg" memberImage={steeringEngg} memberName="ARYAN JADHAV" isBorder className="hidden lg:inline-flex" />
+            <MemberCard memberPosition="Solar Engg" memberImage={solarEngg} memberName="ADWAIT KULKARNI" isBorder className="lg:hidden" />
+            <MemberCard memberPosition="Autonomous Engg" memberImage={autoEngg} memberName="SANIKA BHALGE" isBorder className="lg:hidden" />
            </div>
            <div className="grid grid-cols-2 gap-4 px-2 items-center justify-center pt-20 md:pt-56 lg:pt-44">
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+            <MemberCard memberPosition="Solar Engg" memberImage={solarEngg} memberName="ADWAIT KULKARNI" isBorder className="hidden lg:inline-flex" />
+            <MemberCard memberPosition="Autonomous Engg" memberImage={autoEngg} memberName="SANIKA BHALGE" isBorder className="hidden lg:inline-flex" />
+            <MemberCard memberPosition="Brakes Engg" memberImage={brakesEngg} memberName="AMEY TAMBE" isBorder className="lg:hidden" />
+            <MemberCard memberPosition="Brakes Engg" memberImage={brakesEngg2} memberName="SHRUTI JADHAV" isBorder className="lg:hidden" />
            </div>
            <div className="grid grid-col-1 lg:hidden items-center justify-center pt-20 md:pt-56">
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+            <MemberCard memberPosition="High Voltage Engg" memberImage={voltEngg} memberName="ROHAN PATIL" isBorder />
            </div>
            <div className="lg:grid grid-cols-3 hidden gap-5 px-2 items-center justify-center pt-20 md:pt-24 lg:pt-44">
-           <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
-            <MemberCard memberPosition="Marketing Lead" memberImage={marketingLead} memberName="AISHWARYA MORE" isBorder />
+           <MemberCard memberPosition="Brakes Engg" memberImage={brakesEngg} memberName="AMEY TAMBE" isBorder isNameOrange />
+            <MemberCard memberPosition="Brakes Engg" memberImage={brakesEngg2} memberName="SHRUTI JADHAV" isBorder isNameOrange />
+            <MemberCard memberPosition="High Voltage Engg" memberImage={voltEngg} memberName="ROHAN PATIL" isBorder isNameOrange />
            </div>
            </div>
         </div>
