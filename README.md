@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Team Solarium Website
 
-First, run the development server:
+Welcome to the official GitHub repository for the **Team Solarium** website! This website showcases our journey, achievements, and ongoing projects as we compete in the **Sasol Solar Challenge** and various other solar-powered and engineering competitions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌞 About Team Solarium
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Team Solarium is dedicated to designing and building cutting-edge solar-powered vehicles. We aim to innovate in the field of renewable energy and inspire the next generation of engineers and environmental enthusiasts. Our team comprises passionate individuals who excel in engineering, design, and sustainable technology.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌐 Website Overview
 
-To learn more about Next.js, take a look at the following resources:
+The website includes the following pages:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Home**: A welcoming overview of our team and mission.
+- **About**: Learn about our origins, goals, and values.
+- **Legacy**: Discover our achievements, milestones, and contributions to the solar racing community.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔧 Technology Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website is built using the following technologies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Hosting**: Vercel
+
+---
+
+## 🚀 Features
+
+- **Responsive Design**: Optimized for devices of all sizes.
+- **Dynamic Content**: Interactive sections to engage users.
+- **SEO Friendly**: Structured for better visibility on search engines.
+- **Contact Form**: Seamlessly connect with us.
+- **Multimedia Integration**: High-quality images and videos.
+
+---
+
+## 🛠️ Installation & Setup
+
+To run the website locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/team-solarium-website.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd team-solarium-website
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 📄 License
+
+This project is proprietary and not licensed for public use. All rights reserved by Team Solarium.
+
+---
+
+## 📢 Acknowledgments
+
+- **Sasol Solar Challenge** for providing a platform to innovate and compete.
+- All team members and supporters who make our journey possible.
+- The development community for tools and inspiration.
+
+
+---
+
+Thank you for visiting our repository! Together, let's innovate for a brighter, solar-powered future. 🌞
