@@ -6,7 +6,6 @@ import teamPhoto from "@/assets/team.png";
 import { twMerge } from "tailwind-merge";
 import { Russo_One } from "next/font/google";
 import { AnimatePresence, motion } from "framer-motion";
-import frameFive from '@/assets/Frame.png';
 import { Footer } from "@/components/sections/Footer";
 import { MemberCard } from "@/components/ui/MemberCard";
 import teamLead from '@/assets/malhar_patil.png';
@@ -94,11 +93,23 @@ export default function MeetTheTeam() {
         </AnimatePresence>
       </div>
       <div className="relative">
-        <Image src={frameFive} alt="haw" className="object-cover w-full" 
+        {/* <Image src={frameFive} alt="haw" className="object-cover w-full" 
           style={{
             height: cardsHeight > 0 ? `${cardsHeight}px` : '2000px'
           }}
-        />
+        /> */}
+         <div className="grid grid-cols-10 grid-rows-20 bg-[#262626] w-full"
+                    style={{
+                      height: cardsHeight > 0 ? `${cardsHeight}px` : '2000px'
+                    }}
+         >
+        {[...Array(200)].map((_, index) => (
+          <div
+            key={index}
+            className=" border border-white"
+          ></div>
+        ))}
+      </div>
         <div className="absolute block inset-0 text-white">
           <div ref={cardsRef}>
            <div className="grid grid-cols-2 pt-24 lg:pt-48 px-2 justify-center items-center">
@@ -146,7 +157,7 @@ export default function MeetTheTeam() {
            </div>
         </div>
       </div>
-      <div className="z-50 mt-16">
+      <div className="z-50">
       <Footer />
       </div>
     </>
