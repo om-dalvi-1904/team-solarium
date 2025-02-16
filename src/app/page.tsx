@@ -14,8 +14,9 @@ import invThree from '@/assets/inv3.png';
 import invThreeTwo from '@/assets/inv3.2.png';
 import invFourLanding from '@/assets/Inv4Landing.png';
 import invFive from '@/assets/Inv5.png';
-import { PartnerGrid } from '@/components/ui/PartnerGrid';
+// import { PartnerGrid } from '@/components/ui/PartnerGrid';
 import { Footer } from '@/components/sections/Footer';
+import { ArrowRight } from 'lucide-react';
 
 const anton = Anton({
   subsets: ['latin'],
@@ -176,11 +177,12 @@ export default function Landing() {
             </motion.div>
           </div>
           <div className="bg-orange-600 py-5"></div>
-          <div className='bg-[#1e1e1e] px-4 pt-6' ref={partnersRef}>
-          <div className='flex flex-col'>
+          <div className='bg-[#1e1e1e] px-4 py-6' ref={partnersRef}>
+          <div className='flex flex-row justify-center items-center gap-4'>
             <a href='/partners' className={twMerge(redRose.className, 'text-2xl md:text-4xl font-extrabold')}>Our Partners</a>
+            <ArrowRight />
           </div>
-          <PartnerGrid />
+          {/* <PartnerGrid /> */}
           </div>
           <div className='pt-6 px-4 flex flex-col gap-6 pb-20' ref={supportRef}>
             <span className={twMerge('text-2xl md:text-4xl font-extrabold',redRose.className)}>Support Us</span>
