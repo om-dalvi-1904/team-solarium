@@ -8,7 +8,7 @@ import legacyTeam from '@/assets/teamPhotoLegacy.png'
 import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { Russo_One, Red_Rose } from "next/font/google";
-import bgDiv from '@/assets/legacyImage.png';
+import bgDiv from '@/assets/team_mem/legacyImage.png';
 import invFive from  '@/assets/Invictus_Five.png';
 import { Footer } from "@/components/sections/Footer";
 
@@ -89,7 +89,7 @@ export default function Legacy () {
                 alt="Inv Five"
                 className="size-80 md:size-[680px] object-cover absolute inset-0 z-30 -mt-20 md:-mt-44"
             />
-            <div className={twMerge("md:absolute md:inset-y-96 md:pl-52 lg:pl-72 lg:inset-y-[430px] flex flex-col gap-6 -mt-20 md:-mt-40 lg:-mt-20 z-50 items-end justify-end md:justify-start text-white text-md md:text-lg font-medium px-4", redRose.className)}>
+            <div className={twMerge("md:absolute md:inset-y-96 md:pl-52 lg:pl-72 lg:inset-y-[430px] flex flex-col gap-6 -mt-20 md:-mt-40 lg:-mt-20 z-50 items-end justify-end md:justify-start text-white text-md md:text-xl font-medium px-4", redRose.className)}>
             <span>
             Our team was established in 2016 by Calvin Rohan Raj, whose vision was to create an innovative platform for advancing solar technology
             and promoting sustainability.

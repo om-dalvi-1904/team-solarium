@@ -43,7 +43,7 @@ export default function Landing() {
   // Determine if the screen is mobile on component mount
   useEffect(() => {
     const updateIsMobile = () => {
-      setIsMobile(window.innerWidth < 768); // Set to true for screen width less than 768px
+      setIsMobile(window.innerWidth < 768);
     };
 
     updateIsMobile(); // Initial check
@@ -71,7 +71,7 @@ export default function Landing() {
           <AnimatePresence>
             <motion.div
               className={twMerge(
-                'pb-6 text-4xl md:text-6xl font-semibold pt-6 px-4',
+                'pb-6 text-4xl md:text-6xl lg:text-8xl font-semibold pt-6 px-4',
                 anton.className
               )}
             >
@@ -100,7 +100,7 @@ export default function Landing() {
             <Image
               src={invFour}
               alt="Invictus 4.0"
-              className="size-64 md:size-96 object-cover relative z-30 -mt-10"
+              className="size-64 md:size-96 lg:size-[500px] object-cover relative z-30 -mt-10"
             />
           </motion.div>
           <div className="bg-[#252525] py-10 -mt-24 md:-mt-36 grid grid-rows-1 md:grid-cols-1 md:px-10 md:pt-16 md:pb-6">
@@ -135,13 +135,13 @@ export default function Landing() {
                 <span
                   className={twMerge(
                     redRose.className,
-                    'text-2xl font-extrabold border-b-4 border-orange-600 pb-1'
+                    'text-2xl md:text-4xl font-extrabold border-b-4 border-orange-600 pb-1'
                   )}
                 >
                   Legacy
                 </span>
               </a>
-              <p className="font-medium text-lg py-4">Vehicle Description</p>
+              <p className="font-medium text-lg md:text-xl md:py-6 py-4">Invictus Series</p>
             </div>
             {
               isMobile &&
@@ -161,7 +161,7 @@ export default function Landing() {
               initial={{ x: '50%' }}
               animate={!isLegacyView ? {} : { x: 0 }} 
               transition={{
-                duration: 10,
+                duration: 3,
                 ease: 'linear',
               }}
               ref={legacyRef}
@@ -178,12 +178,12 @@ export default function Landing() {
           <div className="bg-orange-600 py-5"></div>
           <div className='bg-[#1e1e1e] px-4 pt-6' ref={partnersRef}>
           <div className='flex flex-col'>
-            <a className={twMerge(redRose.className, 'text-2xl font-extrabold')}>Our Partners</a>
+            <a href='/partners' className={twMerge(redRose.className, 'text-2xl md:text-4xl font-extrabold')}>Our Partners</a>
           </div>
           <PartnerGrid />
           </div>
           <div className='pt-6 px-4 flex flex-col gap-6 pb-20' ref={supportRef}>
-            <span className={twMerge('text-2xl font-extrabold',redRose.className)}>Support Us</span>
+            <span className={twMerge('text-2xl md:text-4xl font-extrabold',redRose.className)}>Support Us</span>
             <div className='border border-white/40 rounded-2xl py-48 px-20 md:p-64'></div>
           </div>
           <Footer />

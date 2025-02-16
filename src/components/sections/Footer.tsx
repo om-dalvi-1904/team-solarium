@@ -31,7 +31,8 @@ export const Footer = () => {
                     <p className="py-4 text-lg font-light">We&apos;d be happy to hear from you! If you have any questions, comments, or suggestions, don&apos;t hesitate to reach out.</p>
                     <p className="py-2 text-lg font-light">We&apos;ll make sure to respond as quickly as possible!</p>
                     <span className="py-4 text-lg font-medium">Malhar Patil: +91 95033 30842</span>
-                    <span className="text-lg font-medium">Aishwarya More: +91 93255 77966</span>
+                    <span className="text-lg font-medium">Shivani Teli: +91 73918 36424</span>
+                    <span className="text-lg font-medium py-4">Aishwarya More: +91 93255 77966</span>
                     <span className="py-4 text-lg font-medium">Email: teamsolarium@gmail.com</span>
                     <div className="py-7 flex flex-col">
                         <span className="text-xl tracking-wide font-semibold">Connect with us</span>
@@ -66,8 +67,8 @@ export const Footer = () => {
                         <p className="py-4 text-lg font-light">We&apos;d be happy to hear from you! If you have any questions, comments, or suggestions, don&apos;t hesitate to reach out.</p>
                         <p className="py-2 text-lg font-light">We&apos;ll make sure to respond as quickly as possible!</p>
                         <span className="py-4 text-lg font-medium">Malhar Patil: +91 95033 30842</span>
-                        <span className="text-lg font-medium">Aishwarya More: +91 93255 77966</span>
-                        <span className="py-4 text-lg font-medium">Shivani Teli: +91 73918 36424</span>
+                        <span className="text-lg font-medium">Shivani Teli: +91 73918 36424</span>
+                        <span className="text-lg font-medium py-4">Aishwarya More: +91 93255 77966</span>
                         <span className="py-4 text-lg font-medium">Email: teamsolarium@gmail.com</span>
                         <div className="py-7 flex flex-col">
                             <span className="text-xl tracking-wide font-semibold">Connect with us</span>

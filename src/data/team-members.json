@@ -1,0 +1,86 @@
+[
+    {
+      "name": "Malhar Patil",
+      "role": "Team Lead",
+      "team": "",
+      "image": "/avatars/1.png"
+    },
+    {
+      "name": "Shivani Teli",
+      "role": "Team Co-Lead",
+      "team": "",
+      "image": "/avatars/1.png"
+    },
+    {
+      "name": "Aishwarya More",
+      "role": "Marketing Lead",
+      "team": "",
+      "image": "/avatars/1.png"
+    },
+    {
+      "name": "Yash Wavhal",
+      "role": "Chassis Lead",
+      "team": "",
+      "image": "/avatars/1.png"
+    },
+    {
+      "name": "Vedant Joshi",
+      "role": "Low Voltage & DAQ Lead",
+      "team": "Development",
+      "image": "/avatars/1.png"
+    },
+    {
+      "name": "Aditi Salunkhe",
+      "role": "Aerodynamics Lead",
+      "team": "Development",
+      "image": "/avatars/1.png"
+    },
+    {
+        "name": "Vishwas Devadiga",
+        "role": "Aerodynamics Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Darshan Shenkar",
+        "role": "Structural & Composites Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Om Vishnu",
+        "role": "Suspension Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Raj Dhanjode",
+        "role": "Suspension Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Aryan Jadhav",
+        "role": "Steering Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Adwait Deshmukh",
+        "role": "Solar Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Shruti Jadhav",
+        "role": "Brakes Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      },
+      {
+        "name": "Rohan Patil",
+        "role": "High Voltage Engineer",
+        "team": "Development",
+        "image": "/avatars/1.png"
+      }
+  ]

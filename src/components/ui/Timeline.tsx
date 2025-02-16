@@ -6,10 +6,12 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { Sun } from "lucide-react";
+import { StaticImageData } from "next/image";
 
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
+  image?: StaticImageData;
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -60,7 +62,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             key={index}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
-            {/* Fixed Icon and Title */}
             <div className="flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-black flex items-center justify-center">
                 <Sun className="text-orange-600" />
@@ -70,16 +71,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
             </div>
 
-            {/* Content */}
-            <div className="relative flex flex-col pl-20 pr-4 md:pl-4 w-full text-white">
+            <div className="relative flex flex-col pl-20 pr-4 md:pl-4 w-full text-white group">
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-white">
                 {item.title}
               </h3>
+
               <span>{item.content}</span>
             </div>
           </div>
         ))}
-        {/* Timeline Vertical Line */}
         <div
           className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px]"
           style={{

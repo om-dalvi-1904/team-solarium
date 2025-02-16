@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, forwardRef } from 'react';
 import { Poppins } from 'next/font/google';
-import { Red_Rose } from 'next/font/google';
+// import { Red_Rose } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 import Image from 'next/image';
 import solariumLogo from '@/assets/solarium_logo_new.png';
@@ -11,10 +11,6 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: "700",
-});
-const redRose = Red_Rose({
-  variable: "--font-red-rose",
-  subsets: ["latin"],
 });
 
 const navLinks = [
@@ -49,7 +45,7 @@ const Navbar = forwardRef<HTMLDivElement, { supportRef: React.RefObject<HTMLDivE
             <span
               className={twMerge(
                 poppins.className,
-                'font-extrabold text-lg'
+                'font-extrabold text-lg md:text-xl'
               )}
             >
               Team Solarium
@@ -62,7 +58,7 @@ const Navbar = forwardRef<HTMLDivElement, { supportRef: React.RefObject<HTMLDivE
                   <button
                     onClick={() => handleScroll(supportRef)}
                     key={`${link.text}-${cross}-${link.id}`}
-                    className={twMerge(redRose.className, 'cursor-pointer')}
+                    className={twMerge(poppins.className, 'cursor-pointer')}
                   >
                     <span className='border-b-4 border-orange-600'>{link.text}</span>
                   </button>
@@ -70,7 +66,7 @@ const Navbar = forwardRef<HTMLDivElement, { supportRef: React.RefObject<HTMLDivE
                   <button
                     onClick={() => handleScroll(partnersRef)}
                     key={`${link.text}-${cross}-${link.id}`}
-                    className={twMerge(redRose.className, 'cursor-pointer')}
+                    className={twMerge(poppins.className, 'cursor-pointer')}
                   >
                     <span className='border-b-4 border-orange-600'>{link.text}</span>
                   </button>
@@ -78,7 +74,7 @@ const Navbar = forwardRef<HTMLDivElement, { supportRef: React.RefObject<HTMLDivE
                   <a
                     href={link.href}
                     key={`${link.text}-${cross}-${link.id}`}
-                    className={twMerge(redRose.className)}
+                    className={twMerge(poppins.className)}
                   >
                     <span className='border-b-4 border-orange-600'>{link.text}</span>
                   </a>

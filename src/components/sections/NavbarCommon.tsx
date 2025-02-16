@@ -7,6 +7,7 @@ const navLinks = [
   { text: "HOME", href: '/', id:3 },
   { text: "ABOUT", href: '/about', id: 2 },
   { text: "LEGACY", href: '/legacy', id: 4 },
+  { text: "PARTNERS", href: '/partners', id: 5 },
   { text: "TEAM", href: '/team', id: 6 },
 ];
 
@@ -46,7 +47,7 @@ export const NavbarCommon = () => {
         className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 border border-orange-600/15  bg-orange-600/50 backdrop-blur shadow-lg rounded-full px-6 py-2 flex items-center justify-between">
 
         {/* Desktop Links */}
-        <div className="flex space-x-4">
+        <div className="flex gap-2 md:gap-4">
           {navLinks.map((link) => (
             <a
               href={link.href}
