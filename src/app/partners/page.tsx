@@ -6,30 +6,59 @@ import { Footer } from "@/components/sections/Footer"
 import { PartnerGrid } from "@/components/ui/PartnerGrid"
 
 export default function ExamplePage() {
-  const airFranceLogos = [
+  const pccoeLogo = [
     {
-      url: "/placeholder.svg?text=AirFrance",
+      url: "/logos/pccoe2Logo.png",
+      alt: "Air France logo",
+    },
+  ]
+  const mitsubaLogo = [
+    {
+      url: "/logos/mitsubaLogo.svg",
       alt: "Air France logo",
     },
   ]
 
   const goldLogos = [
     {
-      url: "/placeholder.svg?text=AirFrance",
+      url: "/logos/enproLogo.png",
       alt: "Air France logo",
     },
     {
-        url: "/placeholder.svg?text=AirFrance",
+        url: "/logos/adityaLogo.jpeg",
         alt: "Air France logo",
       },
       {
-        url: "/placeholder.svg?text=AirFrance",
+        url: "/logos/gefranLogo.jpg",
         alt: "Air France logo",
       },
       {
-        url: "/placeholder.svg?text=AirFrance",
+        url: "/logos/cpLogo.png",
         alt: "Air France logo",
       },
+  ]
+
+  const silverLogos = [
+    {
+      url: "/logos/boschLogo.png",
+      alt: "Air France logo",
+    },
+    {
+      url: "/logos/anucoolLogo.png",
+      alt: "Air France logo",
+    },
+    {
+      url: "/logos/supergenLogo.png",
+      alt: "Air France logo",
+    },
+    {
+      url: "/logos/atiLogo.png",
+      alt: "Air France logo",
+    },
+    {
+      url: "/logos/kvaserLogo.png",
+      alt: "Air France logo",
+    }
   ]
 
   return (
@@ -51,39 +80,42 @@ export default function ExamplePage() {
 
         <div className="prose prose-lg max-w-none mb-16">
           <p className="text-white/70">
-            Each year we aim to build the most efficient solar car to date, filled to the brim with the newest
-            technological innovations research has to offer. We try to show the capabilities of solar energy by
-            partaking in one of the most difficult challenges in the world; a 3000-kilometer race through the scorching
-            desert of Australia, driven only by the power of the sun.
+          Each year, we strive to build our most efficient solar car yet, packed with cutting-edge technological innovations. We showcase the power of solar energy by competing in one of the toughest challenges in the world—the SASOL Solar Challenge, a grueling endurance race across South Africa, powered solely by the sun.
           </p>
         </div>
         </div>
+        <p className="text-center text-xl text-orange-500 font-semibold">PLATINUM PARTNERS</p>
     <div className="flex flex-col md:flex-row gap-6 justify-center items-center p-6">
       <PartnerCard
-        partnerLevel="DIAMOND PARTNER"
-        title="Investing in Sustainable Transportation"
-        description="With a shared passion for transportation and innovation, Air France KLM Martinair Cargo supports our mission as our logistics partner. Their commitment to innovation and sustainability in transportation perfectly aligns with our goal of driving technological advancements and promoting sustainability."
-        logos={airFranceLogos}
+        partnerLevel="PLATINUM PARTNER"
+        title="PCCOE"
+        description="Pimpri Chinchwad College of Engineering (PCCoE) and Team Solarium share a unified vision of fostering innovation and sustainability. PCCoE&apos;s mission to develop globally competent and ethical professionals aligns seamlessly with Team Solarium&apos;s commitment to advancing solar energy solutions. Together, we strive to create a sustainable future through education and innovation."
+        logos={pccoeLogo}
+        className="flex justify-center items-center"
       />
         <PartnerCard
-        partnerLevel="DIAMOND PARTNER"
-        title="Investing in Sustainable Transportation"
-        description="With a shared passion for transportation and innovation, Air France KLM Martinair Cargo supports our mission as our logistics partner. Their commitment to innovation and sustainability in transportation perfectly aligns with our goal of driving technological advancements and promoting sustainability."
-        logos={airFranceLogos}
+        partnerLevel="PLATINUM PARTNER"
+        title="Mitsuba"
+        description="Mitsuba Corporation&apos;s commitment to technology in harmony with society and the environment aligns with Team Solarium&apos;s mission to advance solar mobility. By supporting Team Solarium, Mitsuba fosters sustainable transportation solutions, reflecting its corporate philosophy of providing pleasure and peace of mind through innovative, environmentally friendly technologies that benefit society."
+        logos={mitsubaLogo}
+        className="flex justify-center items-center"
       />
     </div>
+    <p className="text-center text-xl text-orange-500 font-semibold">GOLD & SILVER PARTNERS</p>
     <div className="flex flex-col md:flex-row justify-center items-center p-6 gap-6">
     <PartnerCard
         partnerLevel="GOLD PARTNERS"
-        title="Investing in Sustainable Transportation"
-        description="With a shared passion for transportation and innovation, Air France KLM Martinair Cargo supports our mission as our logistics partner. Their commitment to innovation and sustainability in transportation perfectly aligns with our goal of driving technological advancements and promoting sustainability."
+        title=""
+        description="Team Solarium partners with Enpro Industries, Aditya Birla Advanced Materials, Gefran, and Chicago Pneumatics to drive innovation in solar mobility. Together, we advance clean energy, automation, and advanced materials, fostering sustainable transportation. Our shared commitment to efficiency and renewable technology powers a greener future through cutting-edge engineering and collaboration."
         logos={goldLogos}
+        className="grid grid-cols-2"
       />
     <PartnerCard
         partnerLevel="SILVER PARTNERS"
-        title="Investing in Sustainable Transportation"
-        description="With a shared passion for transportation and innovation, Air France KLM Martinair Cargo supports our mission as our logistics partner. Their commitment to innovation and sustainability in transportation perfectly aligns with our goal of driving technological advancements and promoting sustainability."
-        logos={goldLogos}
+        title=""
+        description="Team Solarium collaborates with Bosch, Anucool Industries, SuperGen, ATI Technologies, and KVASER to drive solar mobility innovation. Their expertise in engineering, materials, and automotive solutions empowers our pursuit of clean energy. Together, we push technological boundaries, optimize performance, and advance sustainable transportation for a cleaner, more energy-efficient future."
+        logos={silverLogos}
+        className="grid grid-cols-2"
       />
     </div>
     <div className="px-6 py-4 text-orange-500 font-semibold">

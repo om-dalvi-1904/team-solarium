@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { twMerge } from "tailwind-merge"
 
 interface PartnerCardProps {
   partnerLevel: string
@@ -9,15 +10,16 @@ interface PartnerCardProps {
     url: string
     alt: string
   }>
+  className?: string
 }
 
-export default function PartnerCard({ partnerLevel, title, description, logos }: PartnerCardProps) {
+export default function PartnerCard({ partnerLevel, title, description, logos,className  }: PartnerCardProps) {
   return (
     <Card className="bg-black/50 max-w-md">
       <CardHeader className="space-y-4">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 p-4">
+        <div className={twMerge("gap-4 md:grid-cols-3 p-4",className)}>
           {logos.map((logo, index) => (
-            <div key={index} className="relative h-16 w-full">
+            <div key={index} className="relative size-32 w-full">
               <Image src={logo.url || "/placeholder.svg"} alt={logo.alt} fill className="object-contain" />
             </div>
           ))}

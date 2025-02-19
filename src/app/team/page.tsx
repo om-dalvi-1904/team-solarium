@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Red_Rose } from "next/font/google";
 import Image from 'next/image';
 import teamMembersData from '@/data/team-members.json';
+import teamLeadData from '@/data/team-leads.json';
 import { NavbarCommon } from "@/components/sections/NavbarCommon";
 import { twMerge } from "tailwind-merge";
 
@@ -22,6 +23,7 @@ const russoOne = Russo_One({
 
 
 const TeamPage = () => {
+  const teamLead = teamLeadData
   const filteredMembers = teamMembersData;
 
   return (
@@ -62,7 +64,37 @@ const TeamPage = () => {
       <section className="mx-auto max-w-7xl">
         <div className="container py-10 mx-auto px-4">
           <div
-            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+            className="grid grid-cols-2 md:flex md:justify-center gap-4"
+            id="team-members-grid"
+          >
+            {teamLead.map((member, index) => (
+              <div className="team-member group" key={index}>
+                <div className="bg-white p-2 border-2 border-black transition-all duration-300 hover:bg-orange-500">
+                  <div className="relative">
+                    <Image
+                      className="w-full aspect-square object-cover border-2 border-black"
+                      src={member.image || "/placeholder.svg"}
+                      alt={member.name}
+                      draggable="false"
+                      width={300}
+                      height={300}
+                    />
+                  </div>
+
+                  <div className="mt-2 text-center">
+                    <h2 className={twMerge("text-base font-bold text-black truncate", redRose.className)}>
+                      {member.name}
+                    </h2>
+                    <p className={twMerge("text-xs text-black uppercase mt-1 truncate", redRose.className)}>
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 py-6"
             id="team-members-grid"
           >
             {filteredMembers.map((member, index) => (
