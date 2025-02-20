@@ -48,12 +48,12 @@ To run the website locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/team-solarium-website.git
+   git clone https://github.com/Shan-N/team-solarium.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd team-solarium-website
+   cd team-solarium
    ```
 
 3. Install dependencies:

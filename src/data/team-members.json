@@ -9,66 +9,66 @@
       "name": "Yash Wavhal",
       "role": "Chassis Lead",
       "team": "",
-      "image": "/avatars/1.png"
+      "image": "/avatars/yash_wabhal.png"
     },
     {
       "name": "Vedant Joshi",
       "role": "Low Voltage & DAQ Lead",
       "team": "Development",
-      "image": "/avatars/1.png"
+      "image": "/avatars/vedant_joshi.png"
     },
     {
       "name": "Aditi Salunkhe",
       "role": "Aerodynamics Lead",
       "team": "Development",
-      "image": "/avatars/1.png"
+      "image": "/avatars/aditi_salunkhe.png"
     },
     {
         "name": "Vishwas Devadiga",
         "role": "Aerodynamics Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/nishwas_deva.png"
       },
       {
         "name": "Darshan Shenkar",
         "role": "Structural & Composites Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/darshan_shenkar.png"
       },
       {
         "name": "Om Vishnu",
         "role": "Suspension Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/om_vishnu.png"
       },
       {
         "name": "Raj Dhanjode",
         "role": "Suspension Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/raj_dan.png"
       },
       {
         "name": "Aryan Jadhav",
         "role": "Steering Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/aryan_jadhav.png"
       },
       {
         "name": "Adwait Deshmukh",
         "role": "Solar Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/adwait_kul.png"
       },
       {
         "name": "Shruti Jadhav",
         "role": "Brakes Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/shruti_jadhav.png"
       },
       {
         "name": "Rohan Patil",
         "role": "High Voltage Engineer",
         "team": "Development",
-        "image": "/avatars/1.png"
+        "image": "/avatars/rohan_patil.png"
       }
   ]
