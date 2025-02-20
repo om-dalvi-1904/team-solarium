@@ -21,7 +21,7 @@ export default function ExamplePage() {
 
   const goldLogos = [
     {
-      url: "/logos/enproLogo.png",
+      url: "/logos/enproLogo.webp",
       alt: "Air France logo",
     },
     {
@@ -40,7 +40,7 @@ export default function ExamplePage() {
 
   const silverLogos = [
     {
-      url: "/logos/boschLogo.png",
+      url: "/logos/boschLogo.webp",
       alt: "Air France logo",
     },
     {
