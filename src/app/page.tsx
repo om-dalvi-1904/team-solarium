@@ -77,15 +77,14 @@ export default function Landing() {
               )}
             >
               <h1>
-                WE AT
                 <motion.span
                   ref={sectionRef}
                   initial={{ opacity: 0, y: 100 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="block py-2"
+                  className=""
                 >
-                  TEAM SOLARIUM
+                WE AT TEAM SOLARIUM
                 </motion.span>
               </h1>
             </motion.div>
@@ -176,7 +175,7 @@ export default function Landing() {
               <CardCar carName="Invictus 5.0" bgImageUrl={invFive} />
             </motion.div>
           </div>
-          <div className="bg-orange-600 py-5"></div>
+          {/* <div className="bg-white py-2"></div> */}
           <div className='bg-[#1e1e1e] px-4 py-6' ref={partnersRef}>
           <div className='flex flex-row justify-center items-center gap-4'>
             <a href='/partners' className={twMerge(redRose.className, 'text-2xl md:text-4xl font-extrabold')}>Our Partners</a>
@@ -184,10 +183,10 @@ export default function Landing() {
           </div>
           {/* <PartnerGrid /> */}
           </div>
-          <div className='pt-6 px-4 flex flex-col gap-6 pb-20' ref={supportRef}>
+          {/* <div className='pt-6 px-4 flex flex-col gap-6 pb-20' ref={supportRef}>
             <span className={twMerge('text-2xl md:text-4xl font-extrabold',redRose.className)}>Support Us</span>
             <div className='border border-white/40 rounded-2xl py-48 px-20 md:p-64'></div>
-          </div>
+          </div> */}
           <Footer />
         </div>
       </div>

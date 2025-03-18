@@ -139,7 +139,7 @@ export default function About() {
             </div>
             <div className='bg-[#1E1E1E] flex flex-col pb-16'>
                 <div className='px-4 py-4 text-orange-600'>
-                    <span className='text-xl md:text-4xl font-semibold'>SASOL SOLAR <span className='block'>CHALLENGE</span></span>
+                    <span className='text-xl md:text-4xl font-semibold'>SASOL SOLAR <span className=''>CHALLENGE</span></span>
                 </div>
                 <div className='md:grid md:grid-cols-2 md:gap-4 lg:gap-13 md:py-4 text-white'>
                     <div className='hidden md:flex md:relative'>
@@ -178,7 +178,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className='pt-16 flex flex-col'>
-                    <p className='text-orange-600 text-xl md:text-4xl font-semibold px-4 text-right'>ELECTRIC SOLAR VEHICLE <span className='block'>CHALLENGE 3000</span></p>
+                    <p className='text-orange-600 text-xl md:text-4xl font-semibold px-4 text-right'>ELECTRIC SOLAR VEHICLE <span className=''>CHALLENGE 3000</span></p>
                     <div className='relative'>
                     <Image
                         src={invFourImage}

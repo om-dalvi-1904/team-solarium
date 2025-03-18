@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 const navLinks = [
   { text: "ABOUT", href: '/about', id: 2 },
-  { text: "SUPPORT US", id: 3 },
+  // { text: "SUPPORT US", id: 3 },
   { text: "LEGACY", href: '/legacy', id: 4 },
   { text: "PARTNERS", id: 5 },
   { text: "TEAM", href: '/team', id: 6 },

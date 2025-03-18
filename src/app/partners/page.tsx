@@ -39,10 +39,10 @@ export default function ExamplePage() {
   ]
 
   const silverLogos = [
-    {
-      url: "/logos/boschLogo.webp",
-      alt: "Air France logo",
-    },
+    // {
+    //   url: "/logos/boschLogo.webp",
+    //   alt: "Air France logo",
+    // },
     {
       url: "/logos/anucoolLogo.png",
       alt: "Air France logo",
@@ -101,7 +101,7 @@ export default function ExamplePage() {
         className="flex justify-center items-center"
       />
     </div>
-    <p className="text-center text-xl text-orange-500 font-semibold">GOLD & SILVER PARTNERS</p>
+    <p className="text-center text-xl text-orange-500 font-semibold">GOLD PARTNERS</p>
     <div className="flex flex-col md:flex-row justify-center items-center p-6 gap-6">
     <PartnerCard
         partnerLevel="GOLD PARTNERS"
@@ -110,10 +110,13 @@ export default function ExamplePage() {
         logos={goldLogos}
         className="grid grid-cols-2"
       />
+    </div>
+    <p className="text-center text-xl text-orange-500 font-semibold">SILVER PARTNERS</p>
+    <div className="flex flex-col md:flex-row justify-center items-center p-6 gap-6">
     <PartnerCard
         partnerLevel="SILVER PARTNERS"
         title=""
-        description="Team Solarium collaborates with Bosch, Anucool Industries, SuperGen, ATI Technologies, and KVASER to drive solar mobility innovation. Their expertise in engineering, materials, and automotive solutions empowers our pursuit of clean energy. Together, we push technological boundaries, optimize performance, and advance sustainable transportation for a cleaner, more energy-efficient future."
+        description="Team Solarium collaborates with Anucool Industries, SuperGen, ATI Technologies, and KVASER to drive solar mobility innovation. Their expertise in engineering, materials, and automotive solutions empowers our pursuit of clean energy. Together, we push technological boundaries, optimize performance, and advance sustainable transportation for a cleaner, more energy-efficient future."
         logos={silverLogos}
         className="grid grid-cols-2"
       />
