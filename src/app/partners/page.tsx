@@ -1,6 +1,6 @@
 import PartnerCard from "@/components/sections/PartnerCard"
 import Image from "next/image"
-import teamPhoto from '@/assets/team_mem/legacyImage.png'
+import teamPhoto from '@/assets/partners.png'
 import { NavbarCommon } from "@/components/sections/NavbarCommon"
 import { Footer } from "@/components/sections/Footer"
 import { PartnerGrid } from "@/components/ui/PartnerGrid"
@@ -65,12 +65,13 @@ export default function ExamplePage() {
     <>
     <main className="min-h-screen">
         <NavbarCommon />
-    <div className="relative h-[60vh] w-full">
+    <div className="relative h-[80vh] w-full">
         <Image
           src={teamPhoto}
           alt="Team members in racing suits"
           fill
           className="object-cover"
+          draggable={false}
           priority
         />
         <div className="absolute inset-0 bg-black/50" />

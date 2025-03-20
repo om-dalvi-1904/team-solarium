@@ -1,3 +1,4 @@
+'use client';
 import teamPhoto from "@/assets/team.png";
 import { Russo_One } from "next/font/google";
 import { Footer } from "@/components/sections/Footer";
@@ -7,6 +8,8 @@ import teamMembersData from '@/data/team-members.json';
 import teamLeadData from '@/data/team-leads.json';
 import { NavbarCommon } from "@/components/sections/NavbarCommon";
 import { twMerge } from "tailwind-merge";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const redRose = Red_Rose({
     variable: "--color-red-rose",
@@ -25,37 +28,60 @@ const russoOne = Russo_One({
 const TeamPage = () => {
   const teamLead = teamLeadData
   const filteredMembers = teamMembersData;
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+      
+        useEffect(() => {
+          const updateDimensions = () => {
+            setDimensions({
+              width: window.innerWidth,
+              height: window.innerHeight,
+            });
+          };
+      
+          updateDimensions();
+      
+          window.addEventListener("resize", updateDimensions);
+      
+          return () => window.removeEventListener("resize", updateDimensions);
+        }, []);
 
   return (
+    <>
+    <NavbarCommon />
     <div className="relative">
-      <NavbarCommon />
-      {/* Existing sections with added backdrop-blur */}
       <section className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto">
-            <div className="mx-auto lg:pt-28 px-4 py-20">
-              <h1 className={twMerge("text-white text-center font-mono uppercase text-4xl lg:text-8xl tracking-wide mb-8", russoOne.className)}>
-                MEET THE TEAM
-              </h1>
-
+            <div className="mx-auto">
               <div className="relative mb-16">
-                <div className="overflow-hidden border-4 border-white">
+                <div className="overflow-hidden">
                   <Image
                     src={teamPhoto}
                     alt="Team Solarium Group Photo"
-                    className="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover object-center"
+                    className="object-cover w-full h-auto"
                     draggable="false"
-                    width={1200}
-                    height={800}
+                    width={dimensions.width}
+                    height={
+                      dimensions.width < 768
+                        ? (dimensions.width * 9) / 16  // Maintain 16:9 ratio for small devices
+                        : dimensions.width < 1024
+                        ? Math.min(dimensions.height, 400)
+                        : Math.min(dimensions.height, 500)
+                    }
                     priority
                   />
+                  <AnimatePresence>
+                    <motion.div className="absolute inset-0 flex flex-col items-center justify-end px-4">
+                        <h1 className={twMerge(
+                        "text-4xl md:text-8xl font-bold text-center tracking-wider text-white drop-shadow-2xl",
+                        russoOne.className
+                      )}>
+                            MEET THE TEAM
+                        </h1>
+                    </motion.div>
+                </AnimatePresence>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 bg-white text-black p-2">
-                  <p className="text-lg font-mono">
-                    Team Solarium — Solar Car Engineering Excellence
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -129,6 +155,7 @@ const TeamPage = () => {
       <Footer />
       </div>
     </div>
+    </>
   );
 };
 

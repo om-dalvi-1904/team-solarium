@@ -11,6 +11,19 @@ import { Russo_One, Red_Rose } from "next/font/google";
 import bgDiv from '@/assets/team_mem/legacyImage.png';
 import invFive from  '@/assets/Invictus_Five.png';
 import { Footer } from "@/components/sections/Footer";
+import invOne from '@/assets/IN1.1.png';
+import invOne2 from '@/assets/inv1.2.png';
+import invTwo from '@/assets/inv2.png';
+import invTwo2 from '@/assets/inv2Two.png';
+import invThree from '@/assets/inv3.png';
+import inv3Two from '@/assets/inv3Two.png';
+import inv3One from '@/assets/inv3.Two.png'
+import invThree2 from '@/assets/inv3.2.png';
+import inv3Dot from '@/assets/invThree2.png';
+import inv4 from '@/assets/Inv4Landing.png';
+import inv42 from '@/assets/invFour.png';
+import inv5 from '@/assets/Inv5.png';
+import inv52 from '@/assets/inv5A.png';
 
 const russoOne = Russo_One({
   variable: "--font-russo-one",
@@ -108,154 +121,115 @@ export default function Legacy () {
         </div>
         <Timeline data={[
             {title:'Invictus 1.0', content: <div>
-                <span className="block">Adventure Class Solar Electric Vehicle (2016-17)</span>
-                <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
-                <span className="block">Team Members: 25 dedicated students</span>
-                <span className="block">Key Highlights:</span>
-                <span className="block">Weight: 144 kg | Dimensions: 2100mm x 1410mm x 863mm
-                3-wheel tadpole configuration | Max Speed: 40 km/h
-                Brushless DC Motor (48V, 3000 rpm) | Lead-acid battery with 98% charging
-                efficiency</span>
-                <span className="block">Solar Panel: Polycrystalline, 300W, 15% efficiency
-                Achievements:</span>
-                <span className="block">🏆 1st in Pre-virtual, Technical Inspection, Autocross, and Acceleration</span>
-                <span className="block">🏆 Best Design Award</span>
-                <span className="block">🥉 Overall Ranking: 3rd</span>
-                <span className="block">Invictus 1.0 marked Team Solarium&apos;s debut, setting a high standard in solar
-                electric vehicle innovation.</span>
+                <span>Team Solarium&apos;s debut EV dominated ESVC with 1st place in Pre-Virtual, Technical Inspection, Autocross, and Acceleration, earning the Best Design Award and an Overall 3rd Rank. The 144 kg vehicle featured a 3-wheel tadpole configuration, a 40 km/h top speed, and a 300W polycrystalline solar panel with 15% efficiency.</span>
+                <div className="md:grid grid-cols-2">
+                    <Image
+                    src={invOne}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                    src={invOne2}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+            </div>
             </div>,},
             {title:'Invictus 2.0', content:<div>
-                <span className="block">Solar Electric Vehicle with Carbon Fiber Monocoque Chassis 
-                Highlights</span>
-                <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
-                <span className="block">Team Members: 37</span>
-                <span className="block">About:</span>
-                <span className="block">Team Solarium&apos;s first ESVC entry, featuring a carbon fiber monocoque
-                chassis—only the second in India to achieve this innovation.</span>
-                <span className="block">Specifications:</span>
-                <span className="block">Weight: 134 kg | Speed: 63 km/h</span>
-                <span className="block">Motor: Brushless DC, 48V, 3000 rpm, 30 Nm torque</span>
-                <span className="block">Battery: Li-ion, 98%-99% efficiency</span>
-                <span className="block">Solar Panel: Monocrystalline, 610W, 22.3% efficiency</span>
-                <span className="block">Unique Features: 4-speed DAQ system, semi-automatic gear shifting with
-                Arduino</span>
-                <span className="block">Achievements:</span>
-                <span className="block">🏆 1st in Pre-virtual and Technical Inspection</span>
-                <span className="block">🏆 Best Design Award</span>
-                <span className="block">🏅 Overall: 7th</span>
-                <span className="block">Invictus 2.0 pushed boundaries in solar electric vehicle design and
-                innovation.</span>
+                <span>India&apos;s second-ever carbon fiber monocoque chassis solar EV. It won 1st place in Pre-Virtual, Technical Inspection, and Best Design, ranking 7th overall at ESVC. The 134 kg vehicle reached 63 km/h with a 48V Brushless DC motor, a 610W monocrystalline solar panel (22.3% efficiency), and a 4-speed DAQ system with semi-automatic gear shifting.</span>
+                <div className="md:grid grid-cols-2">
+                    <Image
+                    src={invTwo}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    priority
+                    draggable="false"
+                    />
+                    <Image
+                    src={invTwo2}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    priority
+                    draggable="false"
+                    />
+            </div>
             </div>},
             {title: 'Invictus 3.0', content:<div>
-                <span className="block">Solar Vehicle with Semi-Automatic Gear Shifting</span>
-                <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
-                <span className="block">Team Members: 37</span>
-                <span className="block">Overview:</span>
-                <span className="block">Competing in ESVC, Invictus 3.0 features a carbon fiber monocoque chassis,
-                semi-automatic gear shifting, and advanced solar components.</span>
-                <span className="block">Specifications:</span>
-                <span className="block">Weight: 180 kg | Speed: 70 km/h</span>
-                <span className="block">Motor: Brushless DC, 48V, 3200 rpm, 36 Nm torque</span>
-                <span className="block">Battery: Li-ion</span>
-                <span className="block">Solar Panel: 404W, 24.2% efficiency, 2.6m2</span>
-                <span className="block">Features: Electronic gear shifting, IoT integration, semi-flexible solar array</span>
-                <span className="block">Achievements:</span>
-                <span className="block">🏆 1st in Pre-virtual, Technical Inspection & Hill Climb</span>
-                <span className="block">🏆 2nd in Autocross</span>
-                <span className="block">🏆 Best Design Award</span>
-                <span className="block">🥈 Overall Rank: 4th</span>
-                <span className="block">Invictus 3.0 pushed the limits in solar vehicle design and performance.</span>
+                <span>A performance-driven solar EV, winning 1st in Pre-Virtual, Technical Inspection & Hill Climb, 2nd in Autocross, and the Best Design Award, ranking 4th overall. Featuring electronic gear shifting and IoT integration, it reached 70 km/h, with a 404W solar panel (24.2% efficiency) and a semi-flexible solar array.</span>
+                <div className="md:grid grid-cols-2">
+                    <Image
+                    src={invThree}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                    src={inv3Two}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+            </div>
             </div>},
             {
                 title: 'Invictus 3.1' , content: <div>
-                    <span className="block">Solar Electric Vehicle with Autonomous Abilities and Automatic Gear Shifting</span>
-                    <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
-                    <span className="block">Team Members: 37</span>
-                    <span className="block">Overview:</span>
-                    <span className="block">Invictus 3.1 is an upgraded, autonomous solar vehicle with automatic gear
-                    shifting and a carbon fiber battery box. Although the COVID-19 lockdown
-                    prevented physical participation in ESVC 2020, the team excelled in the
-                    virtual event.</span>
-                    <span className="block">Specifications:</span>
-                    <span className="block">Weight: 180 kg | Speed: 81 km/h</span>
-                    <span className="block">Motor: Brushless DC</span>
-                    <span className="block">Battery: Li-ion, 105 Ah</span>
-                    <span className="block">Solar Panel: 2.1m2, 24.2% efficiency</span>
-                    <span className="block">Features:</span>
-                    <span className="block">IBM Watson cloud platform for real-time data
-                    Image processing & path planning for autonomous navigation
-                    2-speed gear reduction, automatic shifting with Arduino & speed sensor</span>
-                    <span className="block">Achievements:</span>
-                    <span className="block">🏆 1st in Pre-virtual & Team Video</span>
-                    <span className="block">🥈 2nd in Innovation Presentation & Autonomous Concept</span>
-                    <span className="block">🥉 3rd in Design Presentation</span>
-                    <span className="block">🥈 Overall Rank: 2nd</span>
-                    <span className="block">Invictus 3.1 set new standards in autonomous solar vehicle design.</span>
+                    <span>An autonomous solar EV that excelled in ESVC&apos;s virtual event during COVID-19. It won 1st in Pre-Virtual & Team Video, 2nd in Innovation Presentation & Autonomous Concept, and 3rd in Design, ranking 2nd overall. Key features included IBM Watson cloud monitoring, image processing for navigation, and a 2-speed automatic gear reduction system.</span>
+                    <div className="md:grid grid-cols-2">
+                    <Image
+                    src={inv3One}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                </div>
                 </div>
             },
             {
                 title: 'Invictus 3.2' , content: <div>
-                    Aerodynamically Upgraded Version 
-                    <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
-                    <span className="block">
-                        Team Members: 37
-                    </span>
-                    <span className="block">Overview:</span>
-                    <span className="block">Invictus 3.2 features aerodynamic upgrades and additional luggage space.
-                    Designed for the virtual Saur Urja Vehicle Championship 5.0, it highlights Team
-                    Solarium&apos;s innovation.</span>
-                    <span className="block">Specifications:</span>
-                    <span className="block">Weight: 180 kg | Battery: Li-ion, 105 Ah</span>
-                    <span className="block">Motor: Brushless DC | Solar Panel: 2.1m2, 24.2% efficiency</span>
-                    <span className="block">Features: SAE Level 3 Autonomous | IBM Watson cloud monitoring | 2-speed
-                    gear reduction</span>
-                    <span className="block">Achievements:</span>
-                    <span className="block">🏆 1st in Engineering Design, Rulebook, Marketing Report, DVP & DFMEA</span>
-                    <span className="block">🥈 2nd in Business Plan</span>
-                    <span className="block">🥉 3rd in Innovations</span>
-                    <span className="block">🏆 Overall Winner of SUVC 5.0 Championship</span>
-                    <span className="block">Invictus 3.2 dominated SUVC 5.0 with top ranks in multiple categories.</span>
+                    <span>The Overall Champion of SUVC 5.0, winning 1st in Engineering Design, Rulebook, Marketing Report, DVP & DFMEA, 2nd in Business Plan, and 3rd in Innovations. This SAE Level 3 autonomous vehicle weighed 180 kg, featured a 2.1m² solar panel (24.2% efficiency) and was integrated with IBM Watson cloud monitoring.</span>
+                    <div className="md:grid grid-cols-2">
+                    <Image
+                    src={invThree2}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                    src={inv3Dot}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                </div>
                 </div>
             },
             {
                 title: 'Invictus 4.0' , content: <div>
-                    <span className="block">Aerodynamically Sound Closed Cockpit Single Seat SEV for Indian
-                    Roads</span>
-                    <span className="block">Faculty Mentor: Dr. Anindita Roy</span>
-                    <span className="block">Team Members: 30</span>
-                    <span className="block">Overview:</span>
-                    <span className="block">Invictus 4.0, designed for Indian roads, was built to compete in the
-                    ESVC3000+ solar car rally from Chandigarh to Pune, covering 2200
-                    km. It&apos;s one of Team Solarium&apos;s most advanced vehicles.</span>
-                    <span className="block">Specifications:</span>
-                    <span className="block">Weight: 217 kg | Battery: Li-ion, 90 Ah</span>
-                    <span className="block">Motor: Brushless DC Hub Motors | Solar Panel: 4m2, 20% efficiency</span>
-                    <span className="block">Features: SAE Level 4 Autonomous | Radio telemetry for real-time
-                    data | Electronic differential system</span>
-                    <span className="block">Achievements:</span>
-                    <span className="block">🏅 2nd Runner Up | Best Engineering Design Report</span>
-                    <span className="block">🏆 Best Solar Performance | 2nd in Business Plan & Cost Plan</span>
-                    <span className="block">🥈 2nd in Solar Car Rally</span>
-                    <span className="block">Invictus 4.0 excelled with top rankings in engineering and
-                    performance at the ESVC3000+.</span>
+                   <span>A breakthrough closed-cockpit, single-seater SEV, designed for Indian roads and the ESVC3000+ rally, covering 2200 km from Chandigarh to Pune. It ranked 2nd Runner-Up, won Best Solar Performance, and Best Engineering Design Report, and placed 2nd in Business & Cost Plan. Featuring SAE Level 4 autonomy, radio telemetry, and an electronic differential system, the 217 kg vehicle showcased unmatched endurance and efficiency.</span>
+                   <div className="md:grid grid-cols-2">
+                    <Image
+                    src={inv4}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                    src={inv42}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                </div>
                 </div>
             },
             {
                 title: 'Invictus 5.0' , content: <div>
-                    <span className="block">Innovative Solar Vehicle for a Sustainable Future</span>
-                    <span className="block">Event: National Solar Vehicle Challenge (NSVC), VNIT Nagpur</span>
-                    <span className="block">Overview:</span>
-                    <span className="block">Invictus 5.0, Team Solarium&apos;s sleek 3-wheeled, tadpole-configured
-                    solar vehicle, showcased our commitment to innovation and clean
-                    energy. At the NSVC 2023, we pushed the limits of solar-powered
-                    mobility.</span>
-                    <span className="block">Achievements:</span>
-                    <span className="block">🏆 Overall Champions | Best Solar Endurance Award</span>
-                    <span className="block">🥈 Runner-Up in Endurance | Best Crosspad-B Award</span>
-                    <span className="block">📊 Best Business Plan</span>
-                    <span className="block">Invictus 5.0 is a testament to Team Solarium&apos;s dedication to building
-                    sustainable, cutting-edge vehicles for a greener tomorrow.</span>
-
+                    <span>A game-changer at NSVC 2023, crowned Overall Champions and winning Best Solar Endurance. It placed 2nd in Endurance, Best Crosspad-B, and won Best Business Plan. This 3-wheeled tadpole-configured solar EV solidified Team Solarium&apos;s dominance in sustainable mobility and reinforced its vision for the future of solar-powered transportation.</span>
+                    <div className="md:grid grid-cols-2">
+                    <Image
+                    src={inv5}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                    src={inv52}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                </div>
                 </div>
             }
 
