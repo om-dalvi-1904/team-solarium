@@ -236,7 +236,7 @@ export default function Legacy () {
             },
             {
                 title: 'Invictus 6.0' , content: <div>
-                    <span>Crowned Overall Champion at ESVC3000, Invictus 6.0 dominated the competition by securing top honors in endurance, lightweight design, and electrical systems. Also voted People's Choice, this vehicle exemplified Team Solarium's engineering excellence and solidified its leadership in the future of sustainable mobility.</span>
+                    <span>Crowned Overall Champion at ESVC3000, Invictus 6.0 dominated the competition by securing top honors in endurance, lightweight design, and electrical systems. Also voted People&apos;s Choice, this vehicle exemplified Team Solarium&apos;s engineering excellence and solidified its leadership in the future of sustainable mobility.</span>
                     <div className="md:grid grid-cols-2">
                     <Image
                     src={inv6}
