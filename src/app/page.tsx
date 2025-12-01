@@ -14,6 +14,7 @@ import invThree from '@/assets/inv3.png';
 import invThreeTwo from '@/assets/inv3.2.png';
 import invFourLanding from '@/assets/Inv4Landing.png';
 import invFive from '@/assets/Inv5.png';
+import invSix from '@/assets/inv6.png';
 // import { PartnerGrid } from '@/components/ui/PartnerGrid';
 import { Footer } from '@/components/sections/Footer';
 import { ArrowRight } from 'lucide-react';
@@ -155,6 +156,7 @@ export default function Landing() {
                 <CardCar carName="Invictus 3.2" bgImageUrl={invThreeTwo} />
                 <CardCar carName="Invictus 4.0" bgImageUrl={invFourLanding} />
                 <CardCar carName="Invictus 5.0" bgImageUrl={invFive} />
+                <CardCar carName="Invictus 6.0" bgImageUrl={invSix} />
               </motion.div>
             }
             <motion.div
@@ -173,6 +175,7 @@ export default function Landing() {
               <CardCar carName="Invictus 3.2" bgImageUrl={invThreeTwo} />
               <CardCar carName="Invictus 4.0" bgImageUrl={invFourLanding} />
               <CardCar carName="Invictus 5.0" bgImageUrl={invFive} />
+              <CardCar carName="Invictus 6.0" bgImageUrl={invSix} />
             </motion.div>
           </div>
           {/* <div className="bg-white py-2"></div> */}

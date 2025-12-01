@@ -1,6 +1,6 @@
-import teamLead from "@/assets/malhar_patil.png"
-import teamCoLead from "@/assets/shivani_teli.png"
-import marketingLead from "@/assets/aishwarya_more.png"
+import teamLead from "@/assets/aryan_jadhav.png"
+import teamCoLead from "@/assets/raj_dan.png"
+import marketingLead from "@/assets/vedant_joshi.png"
 import chassisLead from "@/assets/team_mem/yash_wabhal.png"
 import testPlanLead from "@/assets/team_mem/mihir_pala.png"
 import aeroLead from "@/assets/team_mem/aditi_salunkhe.png"
@@ -17,9 +17,9 @@ import solarEngg from "@/assets/team_mem/adwait_kul.png"
 import autoEngg from "@/assets/team_mem/sanika_bhalge.png"
 
 export const teamMembers = [
-  { position: "Team Lead", image: teamLead, name: "MALHAR PATIL" },
-  { position: "Team Co-Lead", image: teamCoLead, name: "SHIVANI TELI" },
-  { position: "Marketing Lead", image: marketingLead, name: "AISHWARYA MORE" },
+  { position: "Team Lead", image: teamLead, name: "ARYAN JADHAV" },
+  { position: "Team Co-Lead", image: teamCoLead, name: "RAJ DHANJODE" },
+  { position: "Marketing Lead", image: marketingLead, name: "VEDANT JOSHI" },
   { position: "Chassis Lead", image: chassisLead, name: "YASH WAVHAL" },
   { position: "Testing & Planning Lead", image: testPlanLead, name: "MIHIR PAWSKAR" },
   { position: "Low Voltage & DAQ Lead", image: lowVoltLead, name: "VEDANT JOSHI" },

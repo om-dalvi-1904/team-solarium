@@ -1,80 +1,104 @@
 [
     {
-      "name": "Aishwarya More",
-      "role": "Marketing Lead",
-      "team": "",
-      "image": "/avatars/1.png"
-    },
-    {
-      "name": "Yash Wavhal",
-      "role": "Chassis Lead",
-      "team": "",
-      "image": "/avatars/yash_wabhal.png"
-    },
-    {
       "name": "Vedant Joshi",
-      "role": "Low Voltage & DAQ Lead",
-      "team": "Development",
+      "role": "Marketing",
+      "team": "",
       "image": "/avatars/vedant_joshi.png"
     },
     {
-      "name": "Aditi Salunkhe",
-      "role": "Aerodynamics Lead",
-      "team": "Development",
-      "image": "/avatars/aditi_salunkhe.png"
+      "name": "Darshan Shenkar",
+      "role": "Chassis Lead",
+      "team": "",
+      "image": "/avatars/darshan_shenkar.png"
     },
     {
-        "name": "Vishwas Devadiga",
-        "role": "Aerodynamics Engineer",
-        "team": "Development",
-        "image": "/avatars/nishwas_deva.png"
-      },
-      {
-        "name": "Darshan Shenkar",
-        "role": "Structural & Composites Engineer",
-        "team": "Development",
-        "image": "/avatars/darshan_shenkar.png"
-      },
-      {
-        "name": "Om Vishnu",
-        "role": "Suspension Engineer",
-        "team": "Development",
-        "image": "/avatars/om_vishnu.png"
-      },
-      {
-        "name": "Raj Dhanjode",
-        "role": "Suspension Engineer",
-        "team": "Development",
-        "image": "/avatars/raj_dan.png"
-      },
-      {
-        "name": "Aryan Jadhav",
-        "role": "Steering Engineer",
-        "team": "Development",
-        "image": "/avatars/aryan_jadhav.png"
-      },
-      {
-        "name": "Adwait Deshmukh",
-        "role": "Solar Engineer",
-        "team": "Development",
-        "image": "/avatars/adwait_kul.png"
-      },
-      {
-        "name": "Amey Tambe",
-        "role": "Brakes Engineer",
-        "team": "Development",
-        "image": "/avatars/amey_tambe.png"
-      },
-      {
-        "name": "Shruti Jadhav",
-        "role": "Brakes Engineer",
-        "team": "Development",
-        "image": "/avatars/shruti_jadhav.png"
-      },
-      {
-        "name": "Rohan Patil",
-        "role": "High Voltage Engineer",
-        "team": "Development",
-        "image": "/avatars/rohan_patil.png"
-      }
+      "name": "Vishwas Devadiga",
+      "role": "Aerodynamics Lead",
+      "team": "Development",
+      "image": "/avatars/nishwas_deva.png"
+    },
+    {
+      "name": "Om Vishnu",
+      "role": "Vehicle dynamics Lead",
+      "team": "Development",
+      "image": "/avatars/om_vishnu.png"
+    },
+    {
+      "name": "Rohan Patil",
+      "role": "Energy Lead",
+      "team": "Development",
+      "image": "/avatars/rohan_patil.png"
+    },
+    {
+      "name": "Chinmay Patil",
+      "role": "Testing & Planning Lead",
+      "team": "Development",
+      "image": "/avatars/chinmay_patil.png"
+    },
+    {
+      "name": "Amey Tambe",
+      "role": "Brakes Engineer",
+      "team": "Development",
+      "image": "/avatars/amey_tambe.png"
+    },
+    {
+      "name": "Amit Dhonge",
+      "role": "Suspension Engineer",
+      "team": "Development",
+      "image": "/avatars/amit_dhondge.png"
+    },
+    {
+      "name": "Jayank Patil",
+      "role": "Suspension Engineer",
+      "team": "Development",
+      "image": "/avatars/jayank_patil.png"
+    },
+    {
+      "name": "Jui Mehendale",
+      "role": "Steering Engineer",
+      "team": "Development",
+      "image": "/avatars/jui_mehendale.png"
+    },
+    {
+      "name": "Shrushti Kare",
+      "role": "Structural & Composites Engineer",
+      "team": "Development",
+      "image": "/avatars/shrushti_kare.png"
+    },
+    {
+      "name": "Suraj Dubal",
+      "role": "High Voltage Engineer",
+      "team": "Development",
+      "image": "/avatars/suraj_dubal.png"
+    },
+    {
+      "name": "Ajinkya Kshirsagar",
+      "role": "High Voltage Engineer",
+      "team": "Development",
+      "image": "/avatars/ajinkya_kshirsagar.png"
+    },
+    {
+      "name": "Om Ghorale",
+      "role": "Controls Engineer",
+      "team": "Development",
+      "image": "/avatars/om_ghorale.png"
+    },
+    {
+      "name": "Ganesh Ghumare",
+      "role": "Controls Engineer",
+      "team": "Development",
+      "image": "/avatars/ganesh_ghumare.png"
+    },
+    {
+      "name": "Sumit Patil",
+      "role": "Strategy Engineer",
+      "team": "Development",
+      "image": "/avatars/sumit_patil.png"
+    },
+    {
+      "name": "Harsh Sabade",
+      "role": "Strategy Engineer",
+      "team": "Development",
+      "image": "/avatars/harsh_sabade.png"
+    }
   ]

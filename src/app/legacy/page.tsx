@@ -24,6 +24,8 @@ import inv4 from '@/assets/Inv4Landing.png';
 import inv42 from '@/assets/invFour.png';
 import inv5 from '@/assets/Inv5.png';
 import inv52 from '@/assets/inv5A.png';
+import inv6 from '@/assets/inv6.png';
+import inv62 from '@/assets/inv62.png';
 
 const russoOne = Russo_One({
   variable: "--font-russo-one",
@@ -231,8 +233,24 @@ export default function Legacy () {
                     />
                 </div>
                 </div>
+            },
+            {
+                title: 'Invictus 6.0' , content: <div>
+                    <span>Crowned Overall Champion at ESVC3000, Invictus 6.0 dominated the competition by securing top honors in endurance, lightweight design, and electrical systems. Also voted People's Choice, this vehicle exemplified Team Solarium's engineering excellence and solidified its leadership in the future of sustainable mobility.</span>
+                    <div className="md:grid grid-cols-2">
+                    <Image
+                    src={inv6}
+                    alt="startup template"
+                    className="rounded-lg object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                    <Image
+                    src={inv62}
+                    alt="startup template"
+                    className="rounded-lg hidden md:flex object-cover size-80 mt-4 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                </div>
+                </div>
             }
-
         ]} />
         <Footer />
         </>
